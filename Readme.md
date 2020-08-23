@@ -5,7 +5,7 @@
 
 ![](img/skillshare-x-data-science.png)
 
-[Download these Notebooks](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip)
+Download [all Code](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip) or [only Notebooks](https://github.com/jesperdramsch/skillshare-data-science/blob/master/notebooks.zip)
 
 Table of Contents
 ---

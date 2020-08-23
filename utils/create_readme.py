@@ -24,7 +24,7 @@ string = f"""# Skillshare Data Science and Business Analytics in Python
 [Skillshare - Data Science and Business Analytics with Python](https://skl.sh/2CROaFi)\n
 2-month Free Trial of Skillshare Premium for this course and many many others\n
 ![](img/skillshare-x-data-science.png)\n
-[Download these Notebooks]({github_url}{github_stem}archive/master.zip)\n\n"""
+Download [all Code]({github_url}{github_stem}archive/master.zip) or [only Notebooks]({github_url}{github_stem}{github_nb[:-1]}.zip)\n\n"""
 
 ## TOC
 
@@ -53,7 +53,7 @@ In this class we will  use freely and openly available Python libraries includin
 Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.\n
 """
 
-## Notebooks
+## Notebooks (and zip)
 with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
     for f in nb.glob("*.ipynb"):
         title = f.stem
