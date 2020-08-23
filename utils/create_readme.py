@@ -1,5 +1,5 @@
 from pathlib import Path
-import zipfile
+import zipfile, json
 
 nb = Path("notebooks")
 
@@ -75,10 +75,13 @@ with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
             current = title[0]
             string += f"## {chapters[current]}\n"
 
-        ziph.write(f)
+        with open(f, encoding="utf8") as json_file:
+            data = json.load(json_file)        
 
+        ziph.write(f)
         string += f"""### {title.split("- ")[1]}\n
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/{file_name}) [![](https://img.shields.io/badge/open-colab-yellow)]({colab_link})\n
+{"".join(data["cells"][0]["source"][1:]).strip()}\n
 """
     # Add other files to zip
     ziph.write(Path("notebooks/environment.yml"))

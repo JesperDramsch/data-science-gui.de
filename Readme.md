@@ -58,115 +58,173 @@ made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugen
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/01%20-%20Excel%20Files%20and%20CSV%20into%20Pandas.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/01%20-%20Excel%20Files%20and%20CSV%20into%20Pandas.ipynb)
 
+Loading data into python from standard Excel files and comma-separated value (CSV) data.
+
 ### SQL data into Pandas
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/02%20-%20SQL%20data%20into%20Pandas.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/02%20-%20SQL%20data%20into%20Pandas.ipynb)
+
+Many companies sensibly store data in central databases. The Structured Query Language SQL gives access to these databases. We can access these databases with Python, Pandas and SQL Alchemy.
 
 ### Loading any file (like txt)
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/03%20-%20Loading%20any%20file%20(like%20txt).ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/03%20-%20Loading%20any%20file%20(like%20txt).ipynb)
 
+Pandas works great on structured data, but sometimes data comes in weird formats. This is the general way to work with data files in Python.
+
 ### Dealing with huge datasets
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/04%20-%20Dealing%20with%20huge%20datasets.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/04%20-%20Dealing%20with%20huge%20datasets.ipynb)
 
+Some data is too large for our small laptop. Some data is even too large for our terrabyte servers. Being smart about loading data can help us build better data science pipelines.
+
 ### Combining data sources
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/05%20-%20Combining%20data%20sources.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/05%20-%20Combining%20data%20sources.ipynb)
+
+Data can come from different files and you can combine them in a single dataframe.
 
 ## Data Cleaning
 ### Dealing with missing values
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/11%20-%20Dealing%20with%20missing%20values.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/11%20-%20Dealing%20with%20missing%20values.ipynb)
 
+
+
 ### Formatting and deduping data
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/12%20-%20Formatting%20and%20deduping%20data.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/12%20-%20Formatting%20and%20deduping%20data.ipynb)
+
+Formatting columns and removing duplicates is an important part of data preparation.
 
 ### Scaling and binning data
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/14%20-%20Scaling%20and%20binning%20data.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/14%20-%20Scaling%20and%20binning%20data.ipynb)
 
+Data comes in all shapes and forms, but sometimes it's important to get data into the same range of values. Sometimes scaling the data is not enough, but hrouping data into similar categories is beneficial for an analysis.
+
 ### Advanced Strategies (Schemas)
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/15%20-%20Advanced%20Strategies%20(Schemas).ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/15%20-%20Advanced%20Strategies%20(Schemas).ipynb)
 
+Validating data to be within certain ranges is an advanced strategy when automating data science processes.
+
 ### Advanced Strategies (Encoding)
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/16%20-%20Advanced%20Strategies%20(Encoding).ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/16%20-%20Advanced%20Strategies%20(Encoding).ipynb)
+
+Sometimes it's good to change data from one representation to another
 
 ## Exploratory Data Analysis
 ### Exploratory Data Analysis
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/21%20-%20Exploratory%20Data%20Analysis.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/21%20-%20Exploratory%20Data%20Analysis.ipynb)
 
+
+
 ### Visualizing the data for EDA
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/22%20-%20Visualizing%20the%20data%20for%20EDA.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/22%20-%20Visualizing%20the%20data%20for%20EDA.ipynb)
+
+Visualizations are an excellent start to explore data and see relationships between input features.
+
+---
+
+**Markdown**
 
 ### Using descriptive statistics
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/23%20-%20Using%20descriptive%20statistics.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/23%20-%20Using%20descriptive%20statistics.ipynb)
 
+Statistics describe important aspects of our data, often revealing deeper insights.
+
 ### Selecting subsets
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/24%20-%20Selecting%20subsets.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/24%20-%20Selecting%20subsets.ipynb)
 
+Selecting subsets of data to analyze can give deeper insights.
+
 ### Finding and understanding relationships in data
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/25%20-%20Finding%20and%20understanding%20relationships%20in%20data.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/25%20-%20Finding%20and%20understanding%20relationships%20in%20data.ipynb)
+
+
 
 ## Machine Learning
 ### Linear regression
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/31%20-%20Linear%20regression.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/31%20-%20Linear%20regression.ipynb)
 
+A simple machine learning model that can uncover relationships in data.
+
 ### Decision trees and random forests
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/32%20-%20Decision%20trees%20and%20random%20forests.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/32%20-%20Decision%20trees%20and%20random%20forests.ipynb)
+
+Change up the machine learning models
 
 ### Machine learning classification
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/33%20-%20Machine%20learning%20classification.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/33%20-%20Machine%20learning%20classification.ipynb)
 
+Building machine learning models to assign data to classes.
+
 ### Clustering for deeper data insights
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/34%20-%20Clustering%20for%20deeper%20data%20insights.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/34%20-%20Clustering%20for%20deeper%20data%20insights.ipynb)
+
+
 
 ## Machine Learning Validation
 ### Validating machine learning models
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/41%20-%20Validating%20machine%20learning%20models.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/41%20-%20Validating%20machine%20learning%20models.ipynb)
 
+
+
 ### Machine learning interpretability
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/42%20-%20Machine%20learning%20interpretability.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/42%20-%20Machine%20learning%20interpretability.ipynb)
 
+
+
 ### Machine learning fairness
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/43%20-%20Machine%20learning%20fairness.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/43%20-%20Machine%20learning%20fairness.ipynb)
+
+
 
 ## Data Visualization
 ### Basics of data visualization
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/52%20-%20Basics%20of%20data%20visualization.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/52%20-%20Basics%20of%20data%20visualization.ipynb)
 
+
+
 ### Visualizing geospatial data
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/53%20-%20Visualizing%20geospatial%20data.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/53%20-%20Visualizing%20geospatial%20data.ipynb)
+
+
 
 ## Report Generation
 ### Exporting Visualizations and data
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/61%20-%20Exporting%20Visualizations%20and%20data.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/61%20-%20Exporting%20Visualizations%20and%20data.ipynb)
 
+
+
 ### How to Save Presentations in Jupyter
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/62%20-%20How%20to%20Save%20Presentations%20in%20Jupyter.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/62%20-%20How%20to%20Save%20Presentations%20in%20Jupyter.ipynb)
 
+
+
 ### Generating PDF Reports
 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/63%20-%20Generating%20PDF%20Reports.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/63%20-%20Generating%20PDF%20Reports.ipynb)
+
+
 
 ## Class Project
 
