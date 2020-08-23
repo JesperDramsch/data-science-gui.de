@@ -3,7 +3,7 @@
 
 2-month Free Trial of Skillshare Premium for this course and many many others
 
-![](img/skillshare-x-data-science.png)
+[![](img/skillshare-x-data-science.png)](https://skl.sh/2CROaFi)
 
 Download [all Code](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip) or [only Notebooks](https://github.com/jesperdramsch/skillshare-data-science/blob/master/notebooks.zip)
 
@@ -155,7 +155,7 @@ Click the "notebok" badge to view or the "colab" badge to try out the notebooks 
 
 ## Class Project
 
-![](img/thumbnail.png)
+[![](img/thumbnail.png)](https://skl.sh/2CROaFi)
 
 Create a PDF report of a data analysis in Python with at least one visualization.
 
