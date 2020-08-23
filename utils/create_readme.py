@@ -29,9 +29,8 @@ Download [all Code]({github_url}{github_stem}archive/master.zip) or [only Notebo
 ## TOC
 
 string += "Table of Contents\n---\n\n- [Description](#description)\n- [Data](#data)\n- [Notebooks](#notebooks)\n"
-
 for num in range(7):
-    string += f"  {num}. [{chapters[str(num)]}](#{chapters[str(num)].lower().replace(' ','-')})\n"
+    string += f"  {1+num}. [{chapters[str(num)]}](#{chapters[str(num)].lower().replace(' ','-')})\n"
 string += "- [Class Project](#class-project)\n\n---\n"
 
 ## Description
