@@ -10,18 +10,24 @@ Download [all Code](https://github.com/jesperdramsch/skillshare-data-science/arc
 Table of Contents
 ---
 
-0. [Data Loading](#data-loading)
-1. [Data Cleaning](#data-cleaning)
-2. [Exploratory Data Analysis](#exploratory-data-analysis)
-3. [Machine Learning](#machine-learning)
-4. [Machine Learning Validation](#machine-learning-validation)
-5. [Data Visualization](#data-visualization)
-6. [Report Generation](#report-generation)
+- [Description](#description)
+- [Data](#data)
+- [Notebooks](#notebooks)
+  0. [Data Loading](#data-loading)
+  1. [Data Cleaning](#data-cleaning)
+  2. [Exploratory Data Analysis](#exploratory-data-analysis)
+  3. [Machine Learning](#machine-learning)
+  4. [Machine Learning Validation](#machine-learning-validation)
+  5. [Data Visualization](#data-visualization)
+  6. [Report Generation](#report-generation)
+- [Class Project](#class-project)
 
 ---
+## Description
+
 Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
 
-Python has become the lingua franca of data science and is, therefore, the topic of this class. 
+Python has become the lingua franca of data science and is, therefore, the topic of this class.
 
 Programming can be intimidating, however, Python excels due to its readability and being freely available for all platforms including Linux, Mac and Windows. This class will assume some prior knowledge of Python syntax, but to establish a common learning environment some of the basics will be covered. We will cover the full data science workflow including:
 
@@ -35,8 +41,7 @@ Programming can be intimidating, however, Python excels due to its readability a
 In this class we will  use freely and openly available Python libraries including: Jupyter, NumPy, SciPy, Pandas, MatPlotLib, Seaborn, and Scikit-Learn and you will also learn how to quickly learn new libraries.
 
 
-## Notebooks
-Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.
+## Data
 
 The original data is collected in
 
@@ -52,6 +57,9 @@ made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugen
 - 207 values were randomly removed from the total_bedrooms column, so we can discuss what to do with missing data.
 
 - An additional categorical attribute called ocean_proximity was added, indicating (very roughly) whether each block group is near the ocean, near the Bay area, inland or on an island. This allows discussing what to do with categorical data.
+
+## Notebooks
+Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.
 
 ## Data Loading
 ### Excel Files and CSV into Pandas
@@ -286,4 +294,6 @@ In addition, to encourage sharing, I will provide one example data set on Skills
 Help each other! Data science thrives from collaboration. Students are encouraged to learn from each other and give feedback on tips and tricks they found during their own analysis. Use the project tab early and often and also check what others have accomplished and leave feedback and likes.
 
 Installing all the libraries: When you have conda installed, you can easily use the environment.yml in the notebooks.zip it contains all libraries. Open it with a text editor to see the command to get the environment set up.
+
+### [Sign Up here](https://skl.sh/2CROaFi)
 

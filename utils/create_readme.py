@@ -28,33 +28,29 @@ Download [all Code]({github_url}{github_stem}archive/master.zip) or [only Notebo
 
 ## TOC
 
-string += "Table of Contents\n---\n\n"
+string += "Table of Contents\n---\n\n- [Description](#description)\n- [Data](#data)\n- [Notebooks](#notebooks)\n"
+
 for num in range(7):
-    string += f"{num}. [{chapters[str(num)]}](#{chapters[str(num)].lower().replace(' ','-')})\n"
-string += "\n---\n"
+    string += f"  {num}. [{chapters[str(num)]}](#{chapters[str(num)].lower().replace(' ','-')})\n"
+string += "- [Class Project](#class-project)\n\n---\n"
 
 ## Description
-string += """Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
-
-Python has become the lingua franca of data science and is, therefore, the topic of this class. 
-
-Programming can be intimidating, however, Python excels due to its readability and being freely available for all platforms including Linux, Mac and Windows. This class will assume some prior knowledge of Python syntax, but to establish a common learning environment some of the basics will be covered. We will cover the full data science workflow including:
-
+string += """## Description\n
+Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.\n
+Python has become the lingua franca of data science and is, therefore, the topic of this class.\n
+Programming can be intimidating, however, Python excels due to its readability and being freely available for all platforms including Linux, Mac and Windows. This class will assume some prior knowledge of Python syntax, but to establish a common learning environment some of the basics will be covered. We will cover the full data science workflow including:\n
 - Loading data from files (e.g. Excel tables) and databases (e.g. SQL servers)
 - Data cleaning
 - Exploratory data analysis
 - Machine learning
 - Model validation and churn analysis
-- Data visualization and report generation
-
-In this class we will  use freely and openly available Python libraries including: Jupyter, NumPy, SciPy, Pandas, MatPlotLib, Seaborn, and Scikit-Learn and you will also learn how to quickly learn new libraries.\n
-
-## Notebooks
-Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.\n
+- Data visualization and report generation\n
+In this class we will  use freely and openly available Python libraries including: Jupyter, NumPy, SciPy, Pandas, MatPlotLib, Seaborn, and Scikit-Learn and you will also learn how to quickly learn new libraries.\n\n
 """
 
 ## Data
-string += """The original data is collected in\n
+string += """## Data\n
+The original data is collected in\n
 > Pace, R. Kelley, and Ronald Barry. "Sparse spatial autoregressions." Statistics & Probability Letters 33.3 (1997): 291-297.\n
 Modifications were made by\n
 > Géron, Aurélien. Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems. O'Reilly Media, 2019.\n
@@ -65,6 +61,11 @@ made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugen
 """
 
 ## Notebooks (and zip)
+
+string +="""## Notebooks
+Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.\n
+"""
+
 with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
     for f in nb.glob("*.ipynb"):
         title = f.stem
@@ -110,6 +111,7 @@ Students are encouraged to use their own datasets for the analysis, as these yie
 In addition, to encourage sharing, I will provide one example data set on Skillshare, where people can explore and apply the learnings from this class. This dataset contains California Housing Sales from the 1990 census.\n
 Help each other! Data science thrives from collaboration. Students are encouraged to learn from each other and give feedback on tips and tricks they found during their own analysis. Use the project tab early and often and also check what others have accomplished and leave feedback and likes.\n
 Installing all the libraries: When you have conda installed, you can easily use the environment.yml in the notebooks.zip it contains all libraries. Open it with a text editor to see the command to get the environment set up.\n
+### [Sign Up here](https://skl.sh/2CROaFi)\n
 """
 
 
