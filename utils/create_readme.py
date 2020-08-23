@@ -75,5 +75,5 @@ Installing all the libraries: When you have conda installed, you can easily use 
 """
 
 
-with open("Readme.md", "w") as f:
+with open("Readme.md", mode="w", encoding="utf-8") as f:
     f.write(string)

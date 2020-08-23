@@ -139,7 +139,7 @@ Click the "notebok" badge to view or the "colab" badge to try out the notebooks 
 ## Class Project
 Create a PDF report of a data analysis in Python with at least one visualization.
 
-Assignment: Use a dataset you have from a project you are working on. Prepare and analyze this data and create at least one meaningful visualization. The data could be sales, expenses, or your FitBit data! Make sure to anonymize the data in case anything is sensitive information! (If you don’t have any data, I have some data listed and even a data set you can use below!)
+Assignment: Use a dataset you have from a project you are working on. Prepare and analyze this data and create at least one meaningful visualization. The data could be sales, expenses, or your FitBit data! Make sure to anonymize the data in case anything is sensitive information! (If you donâ€™t have any data, I have some data listed and even a data set you can use below!)
 
 Deliverable: Create a Jupyter Notebook describing your analysis process that contains at least one visualization that tells a compelling story.
 
