@@ -3,7 +3,17 @@
 2-month Free Trial of Skillshare Premium for this course and many many others
 
 [Download these Notebooks](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip)
+---
 
+[0. Data Loading](#Data Loading)
+[1. Data Cleaning](#Data Cleaning)
+[2. Exploratory Data Analysis](#Exploratory Data Analysis)
+[3. Machine Learning](#Machine Learning)
+[4. Machine Learning Validation](#Machine Learning Validation)
+[5. Data Visualization](#Data Visualization)
+[6. Report Generation](#Report Generation)
+
+---
 Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
 
 Python has become the lingua franca of data science and is, therefore, the topic of this class. 

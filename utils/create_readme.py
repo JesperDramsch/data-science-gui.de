@@ -24,6 +24,12 @@ string = f"""# Skillshare Data Science and Business Analytics in Python
 2-month Free Trial of Skillshare Premium for this course and many many others\n
 [Download these Notebooks]({github_url}{github_stem}archive/master.zip)\n"""
 
+## TOC
+
+string += "---\n\n"
+for num in range(7):
+    string += f"[{num}. {chapters[str(num)]}](#{chapters[str(num)]})\n"
+string += "\n---\n"
 
 ## Description
 string += """Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
