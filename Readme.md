@@ -3,6 +3,8 @@
 
 2-month Free Trial of Skillshare Premium for this course and many many others
 
+![](img/skillshare-x-data-science.png)
+
 [Download these Notebooks](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip)
 
 Table of Contents
@@ -152,6 +154,9 @@ Click the "notebok" badge to view or the "colab" badge to try out the notebooks 
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/63%20-%20Generating%20PDF%20Reports.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/master/notebooks/63%20-%20Generating%20PDF%20Reports.ipynb)
 
 ## Class Project
+
+![](img/thumbnail.png)
+
 Create a PDF report of a data analysis in Python with at least one visualization.
 
 **Assignment:** Use a dataset you have from a project you are working on. Prepare and analyze this data and create at least one meaningful visualization. The data could be sales, expenses, or your FitBit data! Make sure to anonymize the data in case anything is sensitive information! (If you don’t have any data, I have some data listed and even a data set you can use below!)
@@ -173,3 +178,4 @@ In addition, to encourage sharing, I will provide one example data set on Skills
 Help each other! Data science thrives from collaboration. Students are encouraged to learn from each other and give feedback on tips and tricks they found during their own analysis. Use the project tab early and often and also check what others have accomplished and leave feedback and likes.
 
 Installing all the libraries: When you have conda installed, you can easily use the environment.yml in the notebooks.zip it contains all libraries. Open it with a text editor to see the command to get the environment set up.
+
