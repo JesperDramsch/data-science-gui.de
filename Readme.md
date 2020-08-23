@@ -1,8 +1,11 @@
 # Skillshare Data Science and Business Analytics in Python
-[Skillshare - Data Science and Business Analytics with Python](https://skl.sh/2CROaFi) 
+[Skillshare - Data Science and Business Analytics with Python](https://skl.sh/2CROaFi)
+
 2-month Free Trial of Skillshare Premium for this course and many many others
 
 [Download these Notebooks](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip)
+
+Table of Contents
 ---
 
 0. [Data Loading](#data-loading)
@@ -26,7 +29,9 @@ Programming can be intimidating, however, Python excels due to its readability a
 - Machine learning
 - Model validation and churn analysis
 - Data visualization and report generation
+
 In this class we will  use freely and openly available Python libraries including: Jupyter, NumPy, SciPy, Pandas, MatPlotLib, Seaborn, and Scikit-Learn and you will also learn how to quickly learn new libraries.
+
 
 ## Notebooks
 Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.
