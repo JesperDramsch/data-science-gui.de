@@ -18,11 +18,15 @@ chapters = { "0": "Data Loading",
 
 current = None
 
+## Head
 string = f"""# Skillshare Data Science and Business Analytics in Python
 [Skillshare - Data Science and Business Analytics with Python](https://skl.sh/2CROaFi) 
 2-month Free Trial of Skillshare Premium for this course and many many others\n
-[Download these Notebooks]({github_url}{github_stem}archive/master.zip)\n
-Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
+[Download these Notebooks]({github_url}{github_stem}archive/master.zip)\n"""
+
+
+## Description
+string += """Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
 
 Python has become the lingua franca of data science and is, therefore, the topic of this class. 
 
@@ -38,6 +42,8 @@ In this class we will  use freely and openly available Python libraries includin
 ## Notebooks
 Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.\n
 """
+
+## Notebooks
 for f in nb.glob("*.ipynb"):
     title = f.stem
     file_name = f.name.replace(" ","%20")
@@ -51,6 +57,7 @@ for f in nb.glob("*.ipynb"):
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/{file_name}) [![](https://img.shields.io/badge/open-colab-yellow)]({colab_link})\n
 """
 
+## Class Project
 string += """## Class Project
 Create a PDF report of a data analysis in Python with at least one visualization.
 
