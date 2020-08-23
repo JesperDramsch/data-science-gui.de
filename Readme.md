@@ -5,13 +5,13 @@
 [Download these Notebooks](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip)
 ---
 
-[0. Data Loading](#data-loading)
-[1. Data Cleaning](#data-cleaning)
-[2. Exploratory Data Analysis](#exploratory-data-analysis)
-[3. Machine Learning](#machine-learning)
-[4. Machine Learning Validation](#machine-learning-validation)
-[5. Data Visualization](#data-visualization)
-[6. Report Generation](#report-generation)
+0. [Data Loading](#data-loading)
+1. [Data Cleaning](#data-cleaning)
+2. [Exploratory Data Analysis](#exploratory-data-analysis)
+3. [Machine Learning](#machine-learning)
+4. [Machine Learning Validation](#machine-learning-validation)
+5. [Data Visualization](#data-visualization)
+6. [Report Generation](#report-generation)
 
 ---
 Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.

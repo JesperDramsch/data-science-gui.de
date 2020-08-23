@@ -28,7 +28,7 @@ string = f"""# Skillshare Data Science and Business Analytics in Python
 
 string += "---\n\n"
 for num in range(7):
-    string += f"[{num}. {chapters[str(num)]}](#{chapters[str(num)].lower().replace(' ','-')})\n"
+    string += f"{num}. [{chapters[str(num)]}](#{chapters[str(num)].lower().replace(' ','-')})\n"
 string += "\n---\n"
 
 ## Description
