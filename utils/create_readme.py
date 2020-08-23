@@ -40,14 +40,15 @@ Click the "notebok" badge to view or the "colab" badge to try out the notebooks 
 """
 for f in nb.glob("*.ipynb"):
     title = f.stem
-    colab_link = colab_url + github_stem + github_nb + f.name
+    file_name = f.name.replace(" ","%20")
+    colab_link = colab_url + github_stem + github_nb + file_name
 
     if not str(current) == title[0]:
         current = title[0]
         string += f"## {chapters[current]}\n"
 
     string += f"""### {title.split("- ")[1]}\n
-[![](https://img.shields.io/badge/view-notebook-orange)](notebooks/{f.name}) [![](https://img.shields.io/badge/open-colab-yellow)]({colab_link})\n
+[![](https://img.shields.io/badge/view-notebook-orange)](notebooks/{file_name}) [![](https://img.shields.io/badge/open-colab-yellow)]({colab_link})\n
 """
 
 string += """## Class Project
