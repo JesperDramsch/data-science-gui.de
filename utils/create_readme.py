@@ -53,6 +53,17 @@ In this class we will  use freely and openly available Python libraries includin
 Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.\n
 """
 
+## Data
+string += """The original data is collected in\n
+> Pace, R. Kelley, and Ronald Barry. "Sparse spatial autoregressions." Statistics & Probability Letters 33.3 (1997): 291-297.\n
+Modifications were made by\n
+> Géron, Aurélien. Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems. O'Reilly Media, 2019.\n
+made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugent/california-housing-prices), with the following modifications from the original:\n
+
+- 207 values were randomly removed from the total_bedrooms column, so we can discuss what to do with missing data.\n
+- An additional categorical attribute called ocean_proximity was added, indicating (very roughly) whether each block group is near the ocean, near the Bay area, inland or on an island. This allows discussing what to do with categorical data.\n
+"""
+
 ## Notebooks (and zip)
 with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
     for f in nb.glob("*.ipynb"):
