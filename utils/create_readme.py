@@ -66,7 +66,7 @@ Click the "notebok" badge to view or the "colab" badge to try out the notebooks 
 """
 
 with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
-    for f in nb.glob("*.ipynb"):
+    for f in sorted(nb.glob("*.ipynb")):
         title = f.stem
         file_name = f.name.replace(" ","%20")
         colab_link = colab_url + github_stem + github_nb + file_name
@@ -78,8 +78,7 @@ with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
         with open(f, encoding="utf8") as json_file:
             data = json.load(json_file)        
 
-        add_ress = "".join(data["cells"][-2]["source"][1:]).strip()
-        add_ress += "".join(data["cells"][-1]["source"][1:]).strip()
+        add_ress = "#" + "".join(data["cells"][-1]["source"][1:]).strip()
 
         ziph.write(f)
         string += f"""### {title.split("- ")[1]}\n
