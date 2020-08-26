@@ -23,3 +23,4 @@ dependencies:
   - pip:
     - discover-feature-relationships==1.0.3
     - quilt==2.9.15
+    - yellowbrick==1.1
