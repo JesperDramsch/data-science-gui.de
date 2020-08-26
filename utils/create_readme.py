@@ -78,13 +78,13 @@ with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
         with open(f, encoding="utf8") as json_file:
             data = json.load(json_file)        
 
-        add_ress = "#" + "".join(data["cells"][-1]["source"][1:]).strip()
+        add_ress = "".join(data["cells"][-1]["source"][1:]).strip()
 
         ziph.write(f)
         string += f"""### {title.split("- ")[1]}\n
 [![](https://img.shields.io/badge/view-notebook-orange)](notebooks/{file_name}) [![](https://img.shields.io/badge/open-colab-yellow)]({colab_link})\n
 {"".join(data["cells"][0]["source"][1:]).strip()}
-{"### Additional Resources" if add_ress else ""}
+{"#### Additional Resources" if add_ress else ""}
 {add_ress}
 """
     # Add other files to zip
