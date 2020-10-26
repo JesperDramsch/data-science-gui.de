@@ -1,7 +1,7 @@
 # Skillshare Data Science and Business Analytics in Python
 [Skillshare - Data Science and Business Analytics with Python](https://skl.sh/2CROaFi)
 
-2-month Free Trial of Skillshare Premium for this course and many many others
+2-week Free Trial of Skillshare Premium for this course and many many others
 
 [![](img/skillshare-x-data-science.png)](https://skl.sh/2CROaFi)
 
