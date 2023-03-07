@@ -2,6 +2,8 @@ name: Rebuild Readme
 
 on: 
   push:
+    branches:
+      - book
     paths-ignore:
       - README.md  
 
@@ -18,7 +20,7 @@ jobs:
     - name: Run Script
       run: |
         cd ${GITHUB_WORKSPACE}
-        python ../utils/create_readme.py
+        python ./.github/utils/create_readme.py
     - name: commit rendered README
       run: |-
         git config user.name "${GITHUB_ACTOR}"
