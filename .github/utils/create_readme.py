@@ -4,7 +4,7 @@ import zipfile, json
 nb = Path("notebooks")
 
 github_stem = "jesperdramsch/skillshare-data-science/"
-github_nb   = "blob/master/notebooks/"
+github_nb   = "blob/main/notebooks/"
 github_url  = "https://github.com/"
 colab_url   = "https://colab.research.google.com/github/"
 
