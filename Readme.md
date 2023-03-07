@@ -25,7 +25,7 @@ Table of Contents
 ---
 ## Description
 
-Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
+Machine learning and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.
 
 Python has become the lingua franca of data science and is, therefore, the topic of this class.
 
@@ -59,7 +59,7 @@ made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugen
 - An additional categorical attribute called ocean_proximity was added, indicating (very roughly) whether each block group is near the ocean, near the Bay area, inland or on an island. This allows discussing what to do with categorical data.
 
 ## Notebooks
-Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.
+Click the "notebook" badge to view or the "colab" badge to try out the notebooks interactively.
 
 ## Data Loading
 ### Excel Files and CSV into Pandas

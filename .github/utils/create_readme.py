@@ -35,7 +35,7 @@ string += "- [Class Project](#class-project)\n\n---\n"
 
 ## Description
 string += """## Description\n
-Business analytics and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.\n
+Machine learning and data science have become important skills across all industries. Knowing both how to perform analytics, as well as, sense checking analyses and understanding concepts is key in making decisions today.\n
 Python has become the lingua franca of data science and is, therefore, the topic of this class.\n
 Programming can be intimidating, however, Python excels due to its readability and being freely available for all platforms including Linux, Mac and Windows. This class will assume some prior knowledge of Python syntax, but to establish a common learning environment some of the basics will be covered. We will cover the full data science workflow including:\n
 - Loading data from files (e.g. Excel tables) and databases (e.g. SQL servers)
@@ -62,7 +62,7 @@ made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugen
 ## Notebooks (and zip)
 
 string +="""## Notebooks
-Click the "notebok" badge to view or the "colab" badge to try out the notebooks interactively.\n
+Click the "notebook" badge to view or the "colab" badge to try out the notebooks interactively.\n
 """
 
 with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:

@@ -1,0 +1,70 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: welcome
+parts:
+- caption: Before we begin
+  chapters:
+  - file: frontmatter/installation
+  - file: frontmatter/data
+  - file: frontmatter/project
+  - file: frontmatter/who
+- caption: Data Handling
+  chapters:
+  - file: text/data-loading
+    sections:
+    - file: notebooks/01 - Excel Files and CSV into Pandas
+    - file: notebooks/02 - SQL data into Pandas
+    - file: notebooks/03 - Loading any file (like txt)
+  - file: notebooks/04 - Dealing with huge datasets
+  - file: notebooks/05 - Combining data sources
+- caption: Data Cleaning
+  chapters:
+  - file: notebooks/11 - Dealing with missing values
+  - file: notebooks/12 - Formatting and deduping data
+  - file: notebooks/14 - Scaling and binning data
+  - file: text/advanced-strategies 
+    sections: 
+    - file: notebooks/15 - Advanced Strategies (Schemas)
+    - file: notebooks/16 - Advanced Strategies (Encoding)
+- caption: Exploratory Data Analysis
+  chapters:
+  - file: notebooks/21 - Exploratory Data Analysis
+    title: Automatic EDA
+  - file: notebooks/22 - Visualizing the data for EDA
+  - file: notebooks/23 - Using descriptive statistics
+  - file: notebooks/24 - Selecting subsets
+  - file: notebooks/25 - Finding and understanding relationships in data
+- caption: Machine Learning
+  chapters:
+  - file: text/machine-learning-modelling 
+    sections:
+    - file: notebooks/31 - Linear regression
+    - file: notebooks/32 - Decision trees and random forests
+    - file: notebooks/33 - Machine learning classification
+    - file: notebooks/34 - Clustering for deeper data insights
+  - file: text/machine-learning-evaluation 
+    sections: 
+    - file: notebooks/41 - Validating machine learning models
+      title: Validating machine learning models
+    - file: notebooks/42 - Machine learning interpretability
+      title: Machine learning interpretability
+    - file: notebooks/43 - Machine learning fairness
+- caption: Data Visualization
+  chapters:
+  - file: notebooks/52 - Basics of data visualization
+  - file: notebooks/53 - Visualizing geospatial data
+- caption: Reporting & Presentations
+  chapters:
+  - file: notebooks/61 - Exporting Visualizations and data
+  - file: text/presentations
+  - file: text/reports
+- caption: Resources
+  chapters:
+  - url: https://dramsch.net/course1
+    title: Skillshare Course
+  - url: https://dramsch.net/courses
+    title: All courses
+  - url: https://dramsch.net
+    title: Jesper Dramsch
