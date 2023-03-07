@@ -3,7 +3,7 @@ name: Rebuild Readme
 on: 
   push:
     branches:
-      - book
+      - main
     paths-ignore:
       - README.md  
 
