@@ -16,6 +16,8 @@ In addition, every notebook below also has a link to Colab, Paperspace Gradient,
 
 You can create an `skillshare-data-science` conda environment executing:
 
+![Gif showing installation of environment in conda](/img/set-up-environment.gif)
+
 ```
 $ conda env create -f notebooks/environment.yml
 ```
