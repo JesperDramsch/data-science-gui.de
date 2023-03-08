@@ -27,9 +27,10 @@ current = None
 ## Head
 string = f"""# Skillshare Data Science and Business Analytics in Python
 [Skillshare - Data Science and Business Analytics with Python](https://dramsch.net/course1)\n
-2-month Free Trial of Skillshare Premium for this course and many many others\n
+Free Trial of Skillshare Premium for this course and many many others\n
 [![](img/skillshare-x-data-science.png)](https://dramsch.net/course1)\n
-Download [all Code]({github_url}{github_stem}archive/main.zip) or [only Notebooks]({github_url}{github_stem}{github_nb[:-1]}.zip)\n\n"""
+Download [all Code]({github_url}{github_stem}archive/main.zip) or [only Notebooks]({github_url}{github_stem}{github_nb[:-1]}.zip)\n\n
+Read the notebooks online on: [Data-Science-Gui.de](https://data-science-gui.de).\n\n"""
 
 ## TOC
 
