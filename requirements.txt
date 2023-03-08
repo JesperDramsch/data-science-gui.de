@@ -18,3 +18,6 @@ voila==0.1.21
 discover-feature-relationships==1.0.3
 quilt==2.9.15
 yellowbrick==1.1
+openpyxl
+psycopg2
+jinja2<3.1.0
