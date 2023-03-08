@@ -5,7 +5,7 @@
 
 [![](img/skillshare-x-data-science.png)](https://dramsch.net/course1)
 
-Download [all Code](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip) or [only Notebooks](https://github.com/jesperdramsch/skillshare-data-science/blob/main/notebooks.zip)
+Download [all Code](https://github.com/jesperdramsch/skillshare-data-science/archive/main.zip) or [only Notebooks](https://github.com/jesperdramsch/skillshare-data-science/blob/main/notebooks.zip)
 
 Table of Contents
 ---

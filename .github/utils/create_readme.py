@@ -3,8 +3,12 @@ import zipfile, json
 
 nb = Path("notebooks")
 
-github_stem = "jesperdramsch/skillshare-data-science/"
-github_nb   = "blob/main/notebooks/"
+## replace these
+user = "jesperdramsch"
+folder = "notebooks"
+repo = "skillshare-data-science"
+github_stem = "jesperdramsch/"+repo+"/"
+github_nb   = "blob/main/"+folder+"/"
 github_url  = "https://github.com/"
 colab_url   = "https://colab.research.google.com/github/"
 
@@ -24,7 +28,7 @@ string = f"""# Skillshare Data Science and Business Analytics in Python
 [Skillshare - Data Science and Business Analytics with Python](https://dramsch.net/course1)\n
 2-month Free Trial of Skillshare Premium for this course and many many others\n
 [![](img/skillshare-x-data-science.png)](https://dramsch.net/course1)\n
-Download [all Code]({github_url}{github_stem}archive/master.zip) or [only Notebooks]({github_url}{github_stem}{github_nb[:-1]}.zip)\n\n"""
+Download [all Code]({github_url}{github_stem}archive/main.zip) or [only Notebooks]({github_url}{github_stem}{github_nb[:-1]}.zip)\n\n"""
 
 ## TOC
 
@@ -58,13 +62,14 @@ made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugen
 - 207 values were randomly removed from the total_bedrooms column, so we can discuss what to do with missing data.\n
 - An additional categorical attribute called ocean_proximity was added, indicating (very roughly) whether each block group is near the ocean, near the Bay area, inland or on an island. This allows discussing what to do with categorical data.\n
 """
-
+## Add a Binder link once
 ## Notebooks (and zip)
-
-string +="""## Notebooks
+string +="""## Notebooks\n
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/{user}/{repo}/HEAD)\n
 Click the "notebook" badge to view or the "colab" badge to try out the notebooks interactively.\n
 """
 
+## Each individual notebook
 with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
     for f in sorted(nb.glob("*.ipynb")):
         title = f.stem
@@ -82,7 +87,11 @@ with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
 
         ziph.write(f)
         string += f"""### {title.split("- ")[1]}\n
-[![](https://img.shields.io/badge/view-notebook-orange)](notebooks/{file_name}) [![](https://img.shields.io/badge/open-colab-yellow)]({colab_link})\n
+[![](https://img.shields.io/badge/view-notebook-orange)]({folder}/{file_name})",
+    f"[![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/{user}/{repo}/blob/main/{folder}/{file_name})",
+    f"[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/{user}/{repo}/blob/main/{folder}/{file_name})",
+    f"[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/{user}/{repo}/blob/main/{folder}/{file_name})",
+    f"[![Launch in Deepnote](https://deepnote.com/buttons/launch-in-deepnote-small.svg)](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2F{user}%2F{repo}%2Fblob%2Fmain%2F{folder}%2F{file_name})\n
 {"".join(data["cells"][0]["source"][1:]).strip()}
 {"#### Additional Resources" if add_ress else ""}
 {add_ress}
