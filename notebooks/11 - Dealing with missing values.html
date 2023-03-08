@@ -1,7 +1,10 @@
 
+
 <!DOCTYPE html>
 
-<html lang="en">
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
@@ -16,18 +19,18 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
-<link href="../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
@@ -35,8 +38,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -45,12 +48,12 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script data-domain="ml.recipes" defer="defer" src="https://plausible.io/js/script.js"></script>
+    <script data-domain="data-science-gui.de" defer="defer" src="https://plausible.io/js/script.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -60,594 +63,92 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/11 - Dealing with missing values';</script>
+    <link rel="canonical" href="https://data-science-gui.de/notebooks/11 - Dealing with missing values.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Formatting and deduping data" href="12%20-%20Formatting%20and%20deduping%20data.html" />
     <link rel="prev" title="Combining data sources" href="05%20-%20Combining%20data%20sources.html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="docsearch:language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
-
   
-  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
   <label class="overlay overlay-primary" for="__primary"></label>
-
   
-  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
   <label class="overlay overlay-secondary" for="__secondary"></label>
-
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
-      
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    </div>
-  </div><div class="bd-header-announcement container-fluid" id="header-announcement">
-    
-
-
-<div class="bd-header-announcement__content">Find the videos in the <a href='https://dramsch.net/course1' />Skillshare course</a> 📺</div>
-
-  </div>
-
-  
-  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
-      <span class="fa-solid fa-bars"></span>
-  </label>
-  <div id="navbar-start">
-    
-    
-  
-
-
-<a class="navbar-brand logo" href="../welcome.html">
-
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-    <p class="title logo__title">Data Science and Machine Learning in Python</p>
-  
-</a>
-    
-  </div>
-
-  
-  <div class="col-lg-9 navbar-header-items">
-    <div id="navbar-center" class="mr-auto">
-      
-      <div class="navbar-center-item">
-        <nav class="navbar-nav">
-    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
-        Site Navigation
-    </p>
-    <ul id="navbar-main-elements" class="navbar-nav">
-        
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/installation.html">
-                        Installation
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/data.html">
-                        Data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/project.html">
-                        Project
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/who.html">
-                        About the Author
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/data-loading.html">
-                        Data Loading
-                      </a>
-                    </li>
-                
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="04%20-%20Dealing%20with%20huge%20datasets.html">
-                        Dealing with huge datasets
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="05%20-%20Combining%20data%20sources.html">
-                        Combining data sources
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
-                        Dealing with missing values
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="12%20-%20Formatting%20and%20deduping%20data.html">
-                        Formatting and deduping data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="14%20-%20Scaling%20and%20binning%20data.html">
-                        Scaling and binning data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/advanced-strategies.html">
-                        Advanced Strategies
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="21%20-%20Exploratory%20Data%20Analysis.html">
-                        Automatic EDA
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="22%20-%20Visualizing%20the%20data%20for%20EDA.html">
-                        Visualizing the data for EDA
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="23%20-%20Using%20descriptive%20statistics.html">
-                        Using descriptive statistics
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="24%20-%20Selecting%20subsets.html">
-                        Selecting subsets
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="25%20-%20Finding%20and%20understanding%20relationships%20in%20data.html">
-                        Finding and understanding relationships in data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/machine-learning-modelling.html">
-                        Machine Learning Modelling
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/machine-learning-evaluation.html">
-                        Machine Learning Evaluation
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="52%20-%20Basics%20of%20data%20visualization.html">
-                        Basics of data visualization
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="53%20-%20Visualizing%20geospatial%20data.html">
-                        Visualizing geospatial data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="61%20-%20Exporting%20Visualizations%20and%20data.html">
-                        Exporting Visualizations and data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/presentations.html">
-                        How to Save Presentations in Jupyter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/reports.html">
-                        Generating PDF in Jupyter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-external" href="https://dramsch.net/course1">
-                        Skillshare Course
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-external" href="https://dramsch.net/courses">
-                        All courses
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-external" href="https://dramsch.net">
-                        Jesper Dramsch
-                      </a>
-                    </li>
-                
-                </div>
-            </div>
-            
-    </ul>
-</nav>
-      </div>
-      
-    </div>
-
-    <div id="navbar-end">
-      
-        <div class="navbar-end-item navbar-persistent--container">
-          
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
-  <i class="fa-solid fa-magnifying-glass"></i>
-</button>
-        </div>
-      
-      
-      <div class="navbar-end-item">
-        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-</button>
-      </div>
-      
-      <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
-      </ul>
-      </div>
-      
-    </div>
+</form></div>
   </div>
 
 
-  
-  
-    <div class="navbar-persistent--mobile">
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
-  <i class="fa-solid fa-magnifying-glass"></i>
-</button>
-    </div>
-  
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Find the videos in the <a href='https://dramsch.net/course1' />Skillshare course</a> 📺</div>
+  </div>
 
   
-  <label class="sidebar-toggle secondary-toggle" for="__secondary">
-      <span class="fa-solid fa-outdent"></span>
-  </label>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
-</div>
-  </nav>
-  
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
       <div class="bd-sidebar-primary bd-sidebar">
         
+
   
   <div class="sidebar-header-items sidebar-primary__section">
     
     
-      <div class="sidebar-header-items__center">
-      
-      <div class="navbar-center-item">
-        <nav class="navbar-nav">
-    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
-        Site Navigation
-    </p>
-    <ul id="navbar-main-elements" class="navbar-nav">
-        
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/installation.html">
-                        Installation
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/data.html">
-                        Data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/project.html">
-                        Project
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../frontmatter/who.html">
-                        About the Author
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/data-loading.html">
-                        Data Loading
-                      </a>
-                    </li>
-                
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="04%20-%20Dealing%20with%20huge%20datasets.html">
-                        Dealing with huge datasets
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="05%20-%20Combining%20data%20sources.html">
-                        Combining data sources
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
-                        Dealing with missing values
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="12%20-%20Formatting%20and%20deduping%20data.html">
-                        Formatting and deduping data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="14%20-%20Scaling%20and%20binning%20data.html">
-                        Scaling and binning data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/advanced-strategies.html">
-                        Advanced Strategies
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="21%20-%20Exploratory%20Data%20Analysis.html">
-                        Automatic EDA
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="22%20-%20Visualizing%20the%20data%20for%20EDA.html">
-                        Visualizing the data for EDA
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="23%20-%20Using%20descriptive%20statistics.html">
-                        Using descriptive statistics
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="24%20-%20Selecting%20subsets.html">
-                        Selecting subsets
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="25%20-%20Finding%20and%20understanding%20relationships%20in%20data.html">
-                        Finding and understanding relationships in data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/machine-learning-modelling.html">
-                        Machine Learning Modelling
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/machine-learning-evaluation.html">
-                        Machine Learning Evaluation
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="52%20-%20Basics%20of%20data%20visualization.html">
-                        Basics of data visualization
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="53%20-%20Visualizing%20geospatial%20data.html">
-                        Visualizing geospatial data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="61%20-%20Exporting%20Visualizations%20and%20data.html">
-                        Exporting Visualizations and data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/presentations.html">
-                        How to Save Presentations in Jupyter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../text/reports.html">
-                        Generating PDF in Jupyter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-external" href="https://dramsch.net/course1">
-                        Skillshare Course
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-external" href="https://dramsch.net/courses">
-                        All courses
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-external" href="https://dramsch.net">
-                        Jesper Dramsch
-                      </a>
-                    </li>
-                
-                </div>
-            </div>
-            
-    </ul>
-</nav>
-      </div>
-      
-      </div>
     
-
-    
-    
-    <div class="sidebar-header-items__end">
-      
-      <div class="navbar-end-item">
-        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-</button>
-      </div>
-      
-      <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
-      </ul>
-      </div>
-      
-    </div>
     
   </div>
-
   
-  <div class="sidebar-start-items sidebar-primary__section">
-    <div class="sidebar-start-items__item">
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
   
-
 
 <a class="navbar-brand logo" href="../welcome.html">
-
   
   
   
-  
-  
-  
-  
-
   
   
     <p class="title logo__title">Data Science and Machine Learning in Python</p>
   
-</a>
-    </div>
-    <div class="sidebar-start-items__item">
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    </div>
-    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -730,42 +231,47 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav>
+</nav></div>
     </div>
-  </div>
   
-
   
-  <div class="sidebar-end-items sidebar-primary__section">
-    <div class="sidebar-end-items__item">
-    </div>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
-
   
   <div id="rtd-footer-container"></div>
 
+
       </div>
+      
       <main id="main-content" class="bd-main">
         
         
 
 <div class="sbt-scroll-pixel-helper"></div>
 
-        <div class="bd-content">
-          <div class="bd-article-container">
-            
-            <div class="bd-header-article">
-                
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        <label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" data-toggle="tooltip" data-placement="right" title="Toggle primary sidebar">
-            <span class="fa-solid fa-bars"></span>
-        </label>
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
 
 
 <div class="dropdown dropdown-launch-buttons">
@@ -773,11 +279,13 @@ const thebe_selector_output = ".output, .cell_output"
     <i class="fas fa-rocket"></i>
   </button>
   <ul class="dropdown-menu">
+      
+      
+      
       <li><a href="https://mybinder.org/v2/gh/jesperdramsch/skillshare-data-science/book?urlpath=tree/book/notebooks/11 - Dealing with missing values.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
@@ -787,13 +295,15 @@ title="Launch on Binder"
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
-</a>
+</li>
+      
+      
+      
       
       <li><a href="https://colab.research.google.com/github/jesperdramsch/skillshare-data-science/blob/book/book/notebooks/11 - Dealing with missing values.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
@@ -803,29 +313,17 @@ title="Launch on Colab"
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
-</a>
+</li>
       
   </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="btn btn-sm"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
 
-<span class="btn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
 
-</button>
 <a href="https://github.com/jesperdramsch/skillshare-data-science" target="_blank"
-   class="btn btn-sm"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
@@ -837,16 +335,21 @@ title="Source repository"
 
 
 
+
+
+
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
+      
+      
+      
       <li><a href="../_sources/notebooks/11 - Dealing with missing values.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
@@ -855,14 +358,16 @@ title="Download source file"
   </span>
 <span class="btn__text-container">.ipynb</span>
 </a>
-</a>
+</li>
+      
+      
+      
       
       <li>
-<button onclick="printPdf(this)"
-  class="btn btn-sm dropdown-item"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
@@ -871,18 +376,56 @@ title="Print to PDF"
   </span>
 <span class="btn__text-container">.pdf</span>
 </button>
-</a>
+</li>
       
   </ul>
 </div>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
-            <span class="fa-solid fa-list"></span>
-        </label>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
     </div>
+  
 </div>
-            </div>
-            
-            
+</div>
+              
+              
 
 <div id="jb-print-docs-body" class="onlyprint">
     <h1>Dealing with missing values</h1>
@@ -895,40 +438,22 @@ title="Print to PDF"
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to">
-   How To
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#imputing-missing-values">
-   Imputing missing values
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scikit-learn-imputation">
-   Scikit Learn Imputation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercise">
-   Exercise
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-resources">
-   Additional Resources
-  </a>
- </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to">How To</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputing-missing-values">Imputing missing values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scikit-learn-imputation">Scikit Learn Imputation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise">Exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
 </div>
 
-            <article class="bd-article" role="main">
               
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="dealing-with-missing-values">
 <h1>Dealing with missing values<a class="headerlink" href="#dealing-with-missing-values" title="Permalink to this heading">#</a></h1>
 <section id="how-to">
@@ -1162,34 +687,7 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">quilt.data.ResidentMario</span> <span class="kn">import</span> <span class="n">missingno_data</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">quilt.data.ResidentMario</span> <span class="kn">import</span> <span class="n">missingno_data</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;quilt.data.ResidentMario&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collisions</span> <span class="o">=</span> <span class="n">missingno_data</span><span class="o">.</span><span class="n">nyc_collision_factors</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">collisions</span> <span class="o">=</span> <span class="n">missingno_data</span><span class="o">.</span><span class="n">nyc_collision_factors</span><span class="p">()</span>
-
-<span class="ne">NameError</span>: name &#39;missingno_data&#39; is not defined
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collisions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/ResidentMario/missingno-data/master/nyc_collision_factors.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1201,31 +699,177 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">collisions</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;collisions&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DATE</th>
+      <th>TIME</th>
+      <th>BOROUGH</th>
+      <th>ZIP CODE</th>
+      <th>LATITUDE</th>
+      <th>LONGITUDE</th>
+      <th>LOCATION</th>
+      <th>ON STREET NAME</th>
+      <th>CROSS STREET NAME</th>
+      <th>OFF STREET NAME</th>
+      <th>...</th>
+      <th>CONTRIBUTING FACTOR VEHICLE 1</th>
+      <th>CONTRIBUTING FACTOR VEHICLE 2</th>
+      <th>CONTRIBUTING FACTOR VEHICLE 3</th>
+      <th>CONTRIBUTING FACTOR VEHICLE 4</th>
+      <th>CONTRIBUTING FACTOR VEHICLE 5</th>
+      <th>VEHICLE TYPE CODE 1</th>
+      <th>VEHICLE TYPE CODE 2</th>
+      <th>VEHICLE TYPE CODE 3</th>
+      <th>VEHICLE TYPE CODE 4</th>
+      <th>VEHICLE TYPE CODE 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11/10/2016</td>
+      <td>16:11:00</td>
+      <td>BROOKLYN</td>
+      <td>11208.0</td>
+      <td>40.662514</td>
+      <td>-73.872007</td>
+      <td>(40.6625139, -73.8720068)</td>
+      <td>WORTMAN AVENUE</td>
+      <td>MONTAUK AVENUE</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>Unspecified</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>TAXI</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>11/10/2016</td>
+      <td>05:11:00</td>
+      <td>MANHATTAN</td>
+      <td>10013.0</td>
+      <td>40.721323</td>
+      <td>-74.008344</td>
+      <td>(40.7213228, -74.0083444)</td>
+      <td>HUBERT STREET</td>
+      <td>HUDSON STREET</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>04/16/2016</td>
+      <td>09:15:00</td>
+      <td>BROOKLYN</td>
+      <td>11201.0</td>
+      <td>40.687999</td>
+      <td>-73.997563</td>
+      <td>(40.6879989, -73.9975625)</td>
+      <td>HENRY STREET</td>
+      <td>WARREN STREET</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>Lost Consciousness</td>
+      <td>Lost Consciousness</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>VAN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>04/15/2016</td>
+      <td>10:20:00</td>
+      <td>QUEENS</td>
+      <td>11375.0</td>
+      <td>40.719228</td>
+      <td>-73.854542</td>
+      <td>(40.7192276, -73.8545422)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>67-64 FLEET STREET</td>
+      <td>...</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>04/15/2016</td>
+      <td>10:35:00</td>
+      <td>BROOKLYN</td>
+      <td>11210.0</td>
+      <td>40.632147</td>
+      <td>-73.952731</td>
+      <td>(40.6321467, -73.9527315)</td>
+      <td>BEDFORD AVENUE</td>
+      <td>CAMPUS ROAD</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">collisions</span> <span class="o">=</span> <span class="n">collisions</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;nan&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">collisions</span> <span class="o">=</span> <span class="n">collisions</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;nan&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;collisions&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -1238,14 +882,10 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">collisions</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;collisions&#39; is not defined
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
+<img alt="../_images/2dad139d68e37d3f8440c5dc834a0682188a922db8f3ad41a18b46aa97cc7169.png" src="../_images/2dad139d68e37d3f8440c5dc834a0682188a922db8f3ad41a18b46aa97cc7169.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1255,14 +895,10 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">msno</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">collisions</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;collisions&#39; is not defined
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
+<img alt="../_images/ad420f4e2a4d376777da01975b984bcb15cbec51fbed997b5a29bd316b31c15c.png" src="../_images/ad420f4e2a4d376777da01975b984bcb15cbec51fbed997b5a29bd316b31c15c.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1272,14 +908,10 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">msno</span><span class="o">.</span><span class="n">dendrogram</span><span class="p">(</span><span class="n">collisions</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;collisions&#39; is not defined
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
+<img alt="../_images/81fe852c3e754582e74db3ca1286c29355faac9b2c5a1f98670dd6f16ed30e27.png" src="../_images/81fe852c3e754582e74db3ca1286c29355faac9b2c5a1f98670dd6f16ed30e27.png" />
 </div>
 </div>
 </section>
@@ -1609,23 +1241,23 @@ dtype: int64
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quilt in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (2.9.15)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pyyaml&gt;=3.12 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (6.0)
-Requirement already satisfied: appdirs&gt;=1.4.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.4.4)
-Requirement already satisfied: xlrd&gt;=1.0.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.0.1)
-Requirement already satisfied: requests&gt;=2.12.4 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.28.2)
-Requirement already satisfied: numpy&gt;=1.14.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.19.1)
-Requirement already satisfied: pandas&gt;=0.21.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.0.5)
-Requirement already satisfied: tqdm&gt;=4.11.2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (4.65.0)
-Requirement already satisfied: packaging&gt;=16.8 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (23.0)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numpy&gt;=1.14.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.19.1)
 Requirement already satisfied: future&gt;=0.16.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (0.18.3)
+Requirement already satisfied: pandas&gt;=0.21.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.0.5)
+Requirement already satisfied: pyyaml&gt;=3.12 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (6.0)
+Requirement already satisfied: packaging&gt;=16.8 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (23.0)
+Requirement already satisfied: requests&gt;=2.12.4 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.28.2)
+Requirement already satisfied: xlrd&gt;=1.0.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.0.1)
 Requirement already satisfied: pyarrow&gt;=0.9.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (11.0.0)
 Requirement already satisfied: six&gt;=1.10.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.16.0)
+Requirement already satisfied: tqdm&gt;=4.11.2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (4.65.0)
+Requirement already satisfied: appdirs&gt;=1.4.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.4.4)
 Requirement already satisfied: python-dateutil&gt;=2.6.1 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2.8.2)
 Requirement already satisfied: pytz&gt;=2017.2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2022.7.1)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.4)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.1.0)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2022.12.7)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (1.26.14)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2022.12.7)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.1.0)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.4)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading package metadata...
@@ -1637,13 +1269,7 @@ Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/hostedtoolcac
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0%|                                                | 0.00/420k [00:00&lt;?, ?B/s]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 17%|██████▋                                 | 70.2k/420k [00:00&lt;00:00, 499kB/s]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 82%|████████████████████████████████▉       | 346k/420k [00:00&lt;00:00, 1.35MB/s]
-100%|█████████████████████████████████████████| 420k/420k [00:00&lt;00:00, 532kB/s]
+100%|████████████████████████████████████████| 420k/420k [00:00&lt;00:00, 2.35MB/s]
 </pre></div>
 </div>
 </div>
@@ -1679,81 +1305,61 @@ Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/hostedtoolcac
     </script>
     <script>kernelName = 'python3'</script>
 
-            </article>
-            
+                </article>
+              
 
-            
-            
-            <footer class="bd-footer-article">
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="05%20-%20Combining%20data%20sources.html" title="previous page">
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="05%20-%20Combining%20data%20sources.html"
+       title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-          <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Combining data sources</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Combining data sources</p>
       </div>
-  </a>
-  <a class='right-next' id="next-link" href="12%20-%20Formatting%20and%20deduping%20data.html" title="next page">
-  <div class="prev-next-info">
-      <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Formatting and deduping data</p>
-  </div>
-  <i class="fa-solid fa-angle-right"></i>
-  </a>
+    </a>
+    <a class="right-next"
+       href="12%20-%20Formatting%20and%20deduping%20data.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Formatting and deduping data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
-            </footer>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to">How To</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputing-missing-values">Imputing missing values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scikit-learn-imputation">Scikit Learn Imputation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise">Exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
-          
-          
-          
-            <div class="bd-sidebar-secondary bd-toc">
-              
-<div class="toc-item">
-  
-<div class="tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-</div>
-<nav id="bd-toc-nav" class="page-toc">
-    <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to">
-   How To
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#imputing-missing-values">
-   Imputing missing values
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scikit-learn-imputation">
-   Scikit Learn Imputation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercise">
-   Exercise
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-resources">
-   Additional Resources
-  </a>
- </li>
-</ul>
-
-</nav>
-</div>
-
-            </div>
-          
-          
-        </div>
-        <footer class="bd-footer-content">
-          <div class="bd-footer-content__inner">
-            
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -1766,18 +1372,17 @@ By Jesper Dramsch
   
   <div class="footer-item">
     
-<p class="copyright">
-
-    &copy; Copyright 2020 - 2023.<br>
-
-</p>
+  <p class="copyright">
+    
+      © Copyright 2020 - 2023.
+      <br/>
+    
+  </p>
 
   </div>
   
   <div class="footer-item">
-    <p class="last-updated">
-Last updated on None.<br>
-</p>
+    
   </div>
   
   <div class="footer-item">
@@ -1787,20 +1392,19 @@ Last updated on None.<br>
 </div>
   </div>
   
-</div>
-          </div>
-        </footer>
+</div></div>
+          </footer>
         
 
       </main>
     </div>
   </div>
-
   
-    
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
