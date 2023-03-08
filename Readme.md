@@ -1,11 +1,14 @@
 # Skillshare Data Science and Business Analytics in Python
 [Skillshare - Data Science and Business Analytics with Python](https://dramsch.net/course1)
 
-2-month Free Trial of Skillshare Premium for this course and many many others
+Free Trial of Skillshare Premium for this course and many many others
 
 [![](img/skillshare-x-data-science.png)](https://dramsch.net/course1)
 
 Download [all Code](https://github.com/jesperdramsch/skillshare-data-science/archive/main.zip) or [only Notebooks](https://github.com/jesperdramsch/skillshare-data-science/blob/main/notebooks.zip)
+
+
+Read the notebooks online on: [Data-Science-Gui.de](https://data-science-gui.de).
 
 Table of Contents
 ---
