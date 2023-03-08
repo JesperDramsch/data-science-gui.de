@@ -21,4 +21,4 @@ We will be using popular and freely available Python libraries such as Jupyter, 
 
 By the end of this class, you will not only have a solid understanding of data science and analytics but also be able to quickly learn new libraries and tools. So, don't wait any longer and enroll in this Python Data Science Master Class today!
 
-### [Sign Up here](https://skl.sh/2CROaFi)
+### [Sign Up here](https://dramsch.net/course1)

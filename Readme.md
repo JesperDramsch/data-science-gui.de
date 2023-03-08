@@ -1,9 +1,9 @@
 # Skillshare Data Science and Business Analytics in Python
-[Skillshare - Data Science and Business Analytics with Python](https://skl.sh/2CROaFi)
+[Skillshare - Data Science and Business Analytics with Python](https://dramsch.net/course1)
 
 2-month Free Trial of Skillshare Premium for this course and many many others
 
-[![](img/skillshare-x-data-science.png)](https://skl.sh/2CROaFi)
+[![](img/skillshare-x-data-science.png)](https://dramsch.net/course1)
 
 Download [all Code](https://github.com/jesperdramsch/skillshare-data-science/archive/master.zip) or [only Notebooks](https://github.com/jesperdramsch/skillshare-data-science/blob/main/notebooks.zip)
 
@@ -271,7 +271,7 @@ Generating reports directly from Jupyter can be done directly to PDF if LaTeX is
 - [LaTeX](https://www.latex-project.org/get/)
 ## Class Project
 
-[![](img/thumbnail.png)](https://skl.sh/2CROaFi)
+[![](img/thumbnail.png)](https://dramsch.net/course1)
 
 Create a PDF report of a data analysis in Python with at least one visualization.
 
@@ -295,5 +295,5 @@ Help each other! Data science thrives from collaboration. Students are encourage
 
 Installing all the libraries: When you have conda installed, you can easily use the environment.yml in the notebooks.zip it contains all libraries. Open it with a text editor to see the command to get the environment set up.
 
-### [Sign Up here](https://skl.sh/2CROaFi)
+### [Sign Up here](https://dramsch.net/course1)
 

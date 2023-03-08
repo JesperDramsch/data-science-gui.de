@@ -21,9 +21,9 @@ current = None
 
 ## Head
 string = f"""# Skillshare Data Science and Business Analytics in Python
-[Skillshare - Data Science and Business Analytics with Python](https://skl.sh/2CROaFi)\n
+[Skillshare - Data Science and Business Analytics with Python](https://dramsch.net/course1)\n
 2-month Free Trial of Skillshare Premium for this course and many many others\n
-[![](img/skillshare-x-data-science.png)](https://skl.sh/2CROaFi)\n
+[![](img/skillshare-x-data-science.png)](https://dramsch.net/course1)\n
 Download [all Code]({github_url}{github_stem}archive/master.zip) or [only Notebooks]({github_url}{github_stem}{github_nb[:-1]}.zip)\n\n"""
 
 ## TOC
@@ -95,7 +95,7 @@ with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
 
 ## Class Project
 string += """## Class Project\n
-[![](img/thumbnail.png)](https://skl.sh/2CROaFi)\n
+[![](img/thumbnail.png)](https://dramsch.net/course1)\n
 Create a PDF report of a data analysis in Python with at least one visualization.\n
 **Assignment:** Use a dataset you have from a project you are working on. Prepare and analyze this data and create at least one meaningful visualization. The data could be sales, expenses, or your FitBit data! Make sure to anonymize the data in case anything is sensitive information! (If you don’t have any data, I have some data listed and even a data set you can use below!)\n
 **Deliverable:** Create a Jupyter Notebook describing your analysis process that contains at least one visualization that tells a compelling story.\n
@@ -109,7 +109,7 @@ Students are encouraged to use their own datasets for the analysis, as these yie
 In addition, to encourage sharing, I will provide one example data set on Skillshare, where people can explore and apply the learnings from this class. This dataset contains California Housing Sales from the 1990 census.\n
 Help each other! Data science thrives from collaboration. Students are encouraged to learn from each other and give feedback on tips and tricks they found during their own analysis. Use the project tab early and often and also check what others have accomplished and leave feedback and likes.\n
 Installing all the libraries: When you have conda installed, you can easily use the environment.yml in the notebooks.zip it contains all libraries. Open it with a text editor to see the command to get the environment set up.\n
-### [Sign Up here](https://skl.sh/2CROaFi)\n
+### [Sign Up here](https://dramsch.net/course1)\n
 """
 
 
