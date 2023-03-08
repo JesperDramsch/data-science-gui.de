@@ -7,18 +7,19 @@ nb = Path("notebooks")
 user = "jesperdramsch"
 folder = "notebooks"
 repo = "skillshare-data-science"
-github_stem = "jesperdramsch/"+repo+"/"
-github_nb   = "blob/main/"+folder+"/"
-github_url  = "https://github.com/"
-colab_url   = "https://colab.research.google.com/github/"
+github_stem = "jesperdramsch/" + repo + "/"
+github_nb = "blob/main/" + folder + "/"
+github_url = "https://github.com/"
+colab_url = "https://colab.research.google.com/github/"
 
-chapters = { "0": "Data Loading",
-             "1": "Data Cleaning",
-             "2": "Exploratory Data Analysis",
-             "3": "Machine Learning",
-             "4": "Machine Learning Validation",
-             "5": "Data Visualization",
-             "6": "Report Generation"
+chapters = {
+    "0": "Data Loading",
+    "1": "Data Cleaning",
+    "2": "Exploratory Data Analysis",
+    "3": "Machine Learning",
+    "4": "Machine Learning Validation",
+    "5": "Data Visualization",
+    "6": "Report Generation",
 }
 
 current = None
@@ -64,16 +65,16 @@ made available under the CC0 license on [Kaggle](https://www.kaggle.com/camnugen
 """
 ## Add a Binder link once
 ## Notebooks (and zip)
-string +="""## Notebooks\n
+string += f"""## Notebooks\n
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/{user}/{repo}/HEAD)\n
 Click the "notebook" badge to view or the "colab" badge to try out the notebooks interactively.\n
 """
 
 ## Each individual notebook
-with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
+with zipfile.ZipFile("notebooks.zip", "w", zipfile.ZIP_DEFLATED) as ziph:
     for f in sorted(nb.glob("*.ipynb")):
         title = f.stem
-        file_name = f.name.replace(" ","%20")
+        file_name = f.name.replace(" ", "%20")
         colab_link = colab_url + github_stem + github_nb + file_name
 
         if not str(current) == title[0]:
@@ -81,24 +82,20 @@ with zipfile.ZipFile('notebooks.zip', 'w', zipfile.ZIP_DEFLATED) as ziph:
             string += f"## {chapters[current]}\n"
 
         with open(f, encoding="utf8") as json_file:
-            data = json.load(json_file)        
+            data = json.load(json_file)
 
         add_ress = "".join(data["cells"][-1]["source"][1:]).strip()
 
         ziph.write(f)
         string += f"""### {title.split("- ")[1]}\n
-[![](https://img.shields.io/badge/view-notebook-orange)]({folder}/{file_name})",
-    f"[![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/{user}/{repo}/blob/main/{folder}/{file_name})",
-    f"[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/{user}/{repo}/blob/main/{folder}/{file_name})",
-    f"[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/{user}/{repo}/blob/main/{folder}/{file_name})",
-    f"[![Launch in Deepnote](https://deepnote.com/buttons/launch-in-deepnote-small.svg)](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2F{user}%2F{repo}%2Fblob%2Fmain%2F{folder}%2F{file_name})\n
+[![](https://img.shields.io/badge/view-notebook-orange)]({folder}/{file_name}) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/{user}/{repo}/blob/main/{folder}/{file_name}) [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/{user}/{repo}/blob/main/{folder}/{file_name}) [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/{user}/{repo}/blob/main/{folder}/{file_name}) [![Launch in Deepnote](https://deepnote.com/buttons/launch-in-deepnote-small.svg)](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2F{user}%2F{repo}%2Fblob%2Fmain%2F{folder}%2F{file_name})\n
 {"".join(data["cells"][0]["source"][1:]).strip()}
 {"#### Additional Resources" if add_ress else ""}
 {add_ress}
 """
     # Add other files to zip
     ziph.write(Path("notebooks/environment.yml"))
-    for f in Path(nb,"data").glob("*"):
+    for f in Path(nb, "data").glob("*"):
         ziph.write(f, Path("notebooks", "data", f.name))
 
 
