@@ -460,6 +460,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="linear-regression">
 <h1>Linear regression<a class="headerlink" href="#linear-regression" title="Permalink to this heading">#</a></h1>
 <p>A simple machine learning model that can uncover relationships in data.</p>
+<p>Linear regression is a robust machine learning algorithm that is commonly used for modelling and analyzing data.</p>
+<p>It is a simple and effective technique for discovering relationships between variables and predicting future outcomes. The basic premise of linear regression is to find the best linear relationship between the independent and dependent variables in a dataset. Doing so can help identify patterns, trends, and correlations in the data, enabling us to make informed decisions and accurate predictions.</p>
+<p>Linear regression is a versatile tool with applications in various fields, from finance and economics to healthcare and engineering.</p>
 <section id="how-to">
 <h2>How To<a class="headerlink" href="#how-to" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -656,7 +659,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5207832089848821
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5125044976683135
 </pre></div>
 </div>
 </div>
@@ -718,13 +721,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 0.82377571, -0.86903372, -0.84830735],
-       [ 1.06125729, -0.16745859, -0.34507019],
-       [-0.28447163, -0.48895797,  0.69808277],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[-1.09066671, -0.15496492, -0.45502903],
+       [-0.13774437, -0.63091008,  0.80697855],
+       [-2.12299925,  8.94928559,  0.35750729],
        ...,
-       [ 0.74461519, -0.71834486, -0.40227636],
-       [-0.99691635,  0.17416243,  0.1169035 ],
-       [ 0.19049152, -1.01480395, -0.1610518 ]])
+       [-0.29656476,  1.21297112, -0.37031915],
+       [-0.13774437,  0.02334039,  0.6152416 ],
+       [-0.69361574, -0.37877523, -0.79392156]])
 </pre></div>
 </div>
 </div>
@@ -748,7 +751,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5191597941723074
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5137494884129439
 </pre></div>
 </div>
 </div>
@@ -762,7 +765,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5191597941723074
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5137494884129439
 </pre></div>
 </div>
 </div>
@@ -777,8 +780,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([245447.50385984, 202948.15689899, 185120.09196334, ...,
-       221795.03192663, 144918.72514928, 176434.5343257 ])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([298850.4839615 , 265628.42956133, 152436.575483  , ...,
+       229825.74635725, 205047.91067619, 170199.09903396])
 </pre></div>
 </div>
 </div>
@@ -790,17 +793,17 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>16742    230100.0
-18995    260900.0
-10713    230400.0
-20210    404300.0
-16052    322100.0
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12717    283300.0
+551      275000.0
+8674     260700.0
+13541     86100.0
+1179      53800.0
            ...   
-342       82000.0
-9728     245100.0
-17511    239200.0
-9529      95800.0
-185      112800.0
+3494     192400.0
+7906     268100.0
+15783    250000.0
+14582    175900.0
+2515      65600.0
 Name: median_house_value, Length: 2580, dtype: float64
 </pre></div>
 </div>
@@ -816,7 +819,7 @@ Name: median_house_value, Length: 2580, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 98220.52142782, 135095.86312532, 606741.4420569 ])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([103509.08148227, 160590.06029851, 614902.12805365])
 </pre></div>
 </div>
 </div>
@@ -828,7 +831,7 @@ Name: median_house_value, Length: 2580, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4274.064709903294
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-3055.9809990513604
 </pre></div>
 </div>
 </div>

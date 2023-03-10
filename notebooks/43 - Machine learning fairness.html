@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basics of data visualization" href="52%20-%20Basics%20of%20data%20visualization.html" />
-    <link rel="prev" title="Validating machine learning models" href="42%20-%20Machine%20learning%20interpretability.html" />
+    <link rel="prev" title="Machine learning interpretability" href="42%20-%20Machine%20learning%20interpretability.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -458,6 +458,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="machine-learning-fairness">
 <h1>Machine learning fairness<a class="headerlink" href="#machine-learning-fairness" title="Permalink to this heading">#</a></h1>
 <p>Machine Learning fairness is an important part of modern day data modeling. Here we explore an introduction to make models more fair and equitable.</p>
+<p>Machine learning is a powerful tool that has revolutionized many industries by enabling computers to learn from data and make predictions or decisions.</p>
+<p>However, as machine learning algorithms become increasingly ubiquitous in our daily lives, concerns about fairness and equity have emerged. Machine learning fairness refers to the idea that machine learning models should not perpetuate or exacerbate existing biases or discrimination. Fairness means that the model treats all individuals or groups fairly, regardless of race, gender, ethnicity, or other protected characteristics.</p>
+<p>This notebook will provide an overview of the key concepts and challenges in machine learning fairness, as well as some techniques commonly used to address them.</p>
 <section id="how-to">
 <h2>How To<a class="headerlink" href="#how-to" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -596,7 +599,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.636396563148214
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6599710620836868
 </pre></div>
 </div>
 </div>
@@ -639,60 +642,61 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NEAR BAY
-0.5895124568988246
+0.5636248877291463
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.47084072 0.47114888 0.54497126 0.53531299 0.57551658]
-0.5195580846351406  +-  0.04181443144214347 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.39386204 0.50072285 0.55249526 0.472507   0.37377695]
+0.4586728192368502  +-  0.06658826697421394 
 
-0.631123609125263
+0.6821422877052925
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.68858106 0.62479338 0.56935458 0.52254649 0.52178989]
-0.5854130780602735  +-  0.06395691477620276 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.68566783 0.58112869 0.66344303 0.60046575 0.57611163]
+0.6213633851971715  +-  0.04474152806587736 
 
 &lt;1H OCEAN
-0.5897781071931597
+0.6154328175350354
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.63486298 0.61188515 0.56086792 0.63710207 0.56636887]
-0.6022173981674293  +-  0.03277510250950353 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.63320676 0.62195578 0.66865157 0.577638   0.63812725]
+0.6279158713404744  +-  0.029512878953111527 
 
-0.6285358560069831
+0.6084194912648163
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.64648578 0.65477445 0.61881595 0.58223735 0.62489888]
-0.6254424816312961  +-  0.025353794113758786 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.58096898 0.5408741  0.6022505  0.6569035  0.65313979]
+0.6068273737874691  +-  0.04402702900502129 
 
 INLAND
-0.22707960143206707
+0.3254001776085764
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.37747099 0.45526961 0.49521475 0.44198322 0.64170519]
-0.48232875052262286  +-  0.0882292532967383 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.58989172 0.55828372 0.588807   0.51132995 0.51702896]
+0.5530682696573302  +-  0.03376786605863503 
 
-0.1752128609976742
+0.26292655021233635
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.54690643 0.50469367 0.53727267 0.39227901 0.37059129]
-0.47034861470546996  +-  0.07425079036589842 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.51384825 0.59170499 0.40610052 0.55213815 0.41319965]
+0.49539831196845485  +-  0.07425025631144123 
 
 NEAR OCEAN
-0.5452454150884336
+0.6022411133168548
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.5699627  0.47533709 0.58166558 0.58568    0.58744708]
-0.5600184890663926  +-  0.042776777031009176 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.59955449 0.48764293 0.61776038 0.57539627 0.6029907 ]
+0.5766689543569232  +-  0.04654533039592229 
 
-0.5721178827227187
+0.5348647809704772
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.48516756 0.44102404 0.65227406 0.59311447 0.61081426]
-0.5564788774108922  +-  0.07985780002816598 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.55896032 0.58860356 0.51881341 0.50182413 0.49827963]
+0.533296209883515  +-  0.03505410980806954 
 
 ISLAND
+-211.143763787528
 Error in Validation
--11.716646269101343
+nan
 Error in Test
 </pre></div>
 </div>
@@ -717,7 +721,7 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/fcceecddb8d2bef49256782d5072f891b3efae03cf83a02dae90aebeb1cf0320.png" src="../_images/fcceecddb8d2bef49256782d5072f891b3efae03cf83a02dae90aebeb1cf0320.png" />
+<img alt="../_images/4984468f55ae9df5eab8a6a0235c0680f789ed7c38d9a3f235cdeead0d90beaf.png" src="../_images/4984468f55ae9df5eab8a6a0235c0680f789ed7c38d9a3f235cdeead0d90beaf.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ResidualsPlot(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;Residuals for RandomForestRegressor Model&#39;}, xlabel=&#39;Predicted Value&#39;, ylabel=&#39;Residuals&#39;&gt;,
               line_color=None, model=None, test_alpha=None, test_color=None,
               train_alpha=None, train_color=None)
@@ -732,7 +736,7 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/61db4ce502e6a80a377aa64f13d6b2cda6283cc557c5b1549adde117364e862f.png" src="../_images/61db4ce502e6a80a377aa64f13d6b2cda6283cc557c5b1549adde117364e862f.png" />
+<img alt="../_images/38fbe84f65e26a7c4d1a3e8b87a367a56d2beffcc2cfb1709b3d5908c8e3da9a.png" src="../_images/38fbe84f65e26a7c4d1a3e8b87a367a56d2beffcc2cfb1709b3d5908c8e3da9a.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PredictionError(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;Prediction Error for RandomForestRegressor&#39;}, xlabel=&#39;$y$&#39;, ylabel=&#39;$\\hat{y}$&#39;&gt;,
                 model=None)
 </pre></div>
@@ -770,10 +774,10 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay at 0x7f1ecaaaa760&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay at 0x7fa161be3a90&gt;
 </pre></div>
 </div>
-<img alt="../_images/bfc45419cb06b8528cc4d839adebadf3efa852587f4344b4ae50a4590934b330.png" src="../_images/bfc45419cb06b8528cc4d839adebadf3efa852587f4344b4ae50a4590934b330.png" />
+<img alt="../_images/64830bfbcd3cf56f69ca6a512461ce37d9c54e470449e976f8b0aaa783e6bd09.png" src="../_images/64830bfbcd3cf56f69ca6a512461ce37d9c54e470449e976f8b0aaa783e6bd09.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -783,10 +787,10 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay at 0x7f1ecb5e1a00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay at 0x7fa161e73790&gt;
 </pre></div>
 </div>
-<img alt="../_images/b5ea2dfe50827e5d347c11fd0cddf073ab212b81176137e657a7395fc2693773.png" src="../_images/b5ea2dfe50827e5d347c11fd0cddf073ab212b81176137e657a7395fc2693773.png" />
+<img alt="../_images/40eed28343708c24fb58fda9b3b52b00e104a915a0f0b8594170ef143ea5ffcb.png" src="../_images/40eed28343708c24fb58fda9b3b52b00e104a915a0f0b8594170ef143ea5ffcb.png" />
 </div>
 </div>
 </section>
@@ -806,9 +810,9 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/8ebced7d3c80833d9d2c43812a0b74b820e7b4ccd81561b7055e043885234c6b.png" src="../_images/8ebced7d3c80833d9d2c43812a0b74b820e7b4ccd81561b7055e043885234c6b.png" />
+<img alt="../_images/64be42ab4166297d1cd6af6cb8b40b22775740a60b2bee2b117755ca52a0b873.png" src="../_images/64be42ab4166297d1cd6af6cb8b40b22775740a60b2bee2b117755ca52a0b873.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ConfusionMatrix(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;RandomForestClassifier Confusion Matrix&#39;}, xlabel=&#39;Predicted Class&#39;, ylabel=&#39;True Class&#39;&gt;,
-                cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f1ec9b4e4f0&gt;,
+                cmap=&lt;matplotlib.colors.ListedColormap object at 0x7fa1617823d0&gt;,
                 model=None)
 </pre></div>
 </div>
@@ -821,9 +825,9 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/e17c13d8df757eff2cece93311c8802b202c35a5e3c0c14df249b608775ef706.png" src="../_images/e17c13d8df757eff2cece93311c8802b202c35a5e3c0c14df249b608775ef706.png" />
+<img alt="../_images/3f29fce5cc6e31401c800d6599963dc08397f04ad62ad5da5186489b328ec9d7.png" src="../_images/3f29fce5cc6e31401c800d6599963dc08397f04ad62ad5da5186489b328ec9d7.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ClassificationReport(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;RandomForestClassifier Classification Report&#39;}&gt;,
-                     cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f1ec9a775b0&gt;,
+                     cmap=&lt;matplotlib.colors.ListedColormap object at 0x7fa161707460&gt;,
                      model=None)
 </pre></div>
 </div>
@@ -845,15 +849,15 @@ Error in Test
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-   &lt;1H OCEAN       0.64      0.87      0.74      2231
-      INLAND       0.77      0.81      0.79      1624
-      ISLAND       0.00      0.00      0.00         1
-    NEAR BAY       0.55      0.24      0.33       585
-  NEAR OCEAN       0.34      0.07      0.12       668
+   &lt;1H OCEAN       0.64      0.87      0.74      2219
+      INLAND       0.76      0.79      0.78      1627
+      ISLAND       0.00      0.00      0.00         3
+    NEAR BAY       0.52      0.24      0.32       578
+  NEAR OCEAN       0.43      0.08      0.14       682
 
     accuracy                           0.67      5109
-   macro avg       0.46      0.40      0.40      5109
-weighted avg       0.63      0.67      0.63      5109
+   macro avg       0.47      0.40      0.39      5109
+weighted avg       0.64      0.67      0.62      5109
 </pre></div>
 </div>
 </div>
@@ -865,7 +869,7 @@ weighted avg       0.63      0.67      0.63      5109
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3a5b717056d57a5666ebfad514d44f7d3d61d7935684ac24d32163160d496c6e.png" src="../_images/3a5b717056d57a5666ebfad514d44f7d3d61d7935684ac24d32163160d496c6e.png" />
+<img alt="../_images/7bdcc050b230ea22bbf303c1b5dbda75febe06104b3063400ca124d1db4f3091.png" src="../_images/7bdcc050b230ea22bbf303c1b5dbda75febe06104b3063400ca124d1db4f3091.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PrecisionRecallCurve(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;Precision-Recall Curve for RandomForestClassifier&#39;}, xlabel=&#39;Recall&#39;, ylabel=&#39;Precision&#39;&gt;,
                      iso_f1_values={0.2, 0.4, 0.6, 0.8}, model=None)
 </pre></div>
@@ -879,7 +883,7 @@ weighted avg       0.63      0.67      0.63      5109
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1509a10e9e1df1ad833478baf64c7d917f16e32ffb0552d64309df005a9c6c5b.png" src="../_images/1509a10e9e1df1ad833478baf64c7d917f16e32ffb0552d64309df005a9c6c5b.png" />
+<img alt="../_images/62c62b2625805d940e0e5ff02c331c18ff03c32305228a064ca7e6ece312a460.png" src="../_images/62c62b2625805d940e0e5ff02c331c18ff03c32305228a064ca7e6ece312a460.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ROCAUC(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;ROC Curves for RandomForestClassifier&#39;}, xlabel=&#39;False Positive Rate&#39;, ylabel=&#39;True Postive Rate&#39;&gt;,
        model=None)
 </pre></div>
@@ -935,7 +939,7 @@ weighted avg       0.63      0.67      0.63      5109
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Validating machine learning models</p>
+        <p class="prev-next-title">Machine learning interpretability</p>
       </div>
     </a>
     <a class="right-next"

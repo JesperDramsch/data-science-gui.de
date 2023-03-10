@@ -456,6 +456,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="dealing-with-missing-values">
 <h1>Dealing with missing values<a class="headerlink" href="#dealing-with-missing-values" title="Permalink to this heading">#</a></h1>
+<p>Dealing with missing values is a common challenge in data analysis and modelling.</p>
+<p>Missing data can occur for various reasons, including data entry errors, equipment failure, or simply because the data was not collected. Failing to handle missing data appropriately can lead to biased or inaccurate results. It may negatively impact the performance of machine learning models.</p>
+<p>This notebook will explore different strategies for handling missing data in Pandas, including removing missing data, imputing missing values with means or medians, and using advanced imputation techniques.</p>
 <section id="how-to">
 <h2>How To<a class="headerlink" href="#how-to" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -1239,41 +1242,45 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quilt in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (2.9.15)
-Requirement already satisfied: appdirs&gt;=1.4.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.4.4)
-Requirement already satisfied: numpy&gt;=1.14.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.19.1)
-Requirement already satisfied: requests&gt;=2.12.4 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.28.2)
-Requirement already satisfied: six&gt;=1.10.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.16.0)
-Requirement already satisfied: xlrd&gt;=1.0.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.0.1)
-Requirement already satisfied: pandas&gt;=0.21.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.0.5)
-Requirement already satisfied: packaging&gt;=16.8 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (23.0)
-Requirement already satisfied: future&gt;=0.16.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (0.18.3)
 Requirement already satisfied: pyyaml&gt;=3.12 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (6.0)
 Requirement already satisfied: pyarrow&gt;=0.9.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (11.0.0)
+Requirement already satisfied: requests&gt;=2.12.4 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.28.2)
+Requirement already satisfied: appdirs&gt;=1.4.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.4.4)
+Requirement already satisfied: future&gt;=0.16.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (0.18.3)
+Requirement already satisfied: numpy&gt;=1.14.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.19.1)
 Requirement already satisfied: tqdm&gt;=4.11.2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (4.65.0)
+Requirement already satisfied: xlrd&gt;=1.0.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (2.0.1)
+Requirement already satisfied: pandas&gt;=0.21.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.0.5)
+Requirement already satisfied: six&gt;=1.10.0 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (1.16.0)
+Requirement already satisfied: packaging&gt;=16.8 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from quilt) (23.0)
+Requirement already satisfied: pytz&gt;=2017.2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2022.7.1)
+Requirement already satisfied: python-dateutil&gt;=2.6.1 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2.8.2)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: python-dateutil&gt;=2.6.1 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2.8.2)
-Requirement already satisfied: pytz&gt;=2017.2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2022.7.1)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.1.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2022.12.7)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.4)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (1.26.14)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.1.0)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2022.12.7)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading package metadata...
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading 1 fragments (420225 bytes before compression)...
+
+  0%|                                                | 0.00/420k [00:00&lt;?, ?B/s]
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0%|                                                | 0.00/420k [00:00&lt;?, ?B/s]
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0%|                                                | 0.00/420k [00:00&lt;?, ?B/s]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 17%|██████▋                                 | 70.2k/420k [00:00&lt;00:00, 497kB/s]
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 51%|████████████████████▌                   | 216k/420k [00:00&lt;00:00, 1.64MB/s]
-100%|█████████████████████████████████████████| 420k/420k [00:00&lt;00:00, 882kB/s]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 82%|████████████████████████████████▉       | 346k/420k [00:00&lt;00:00, 1.35MB/s]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|█████████████████████████████████████████| 420k/420k [00:00&lt;00:00, 531kB/s]
 </pre></div>
 </div>
 </div>

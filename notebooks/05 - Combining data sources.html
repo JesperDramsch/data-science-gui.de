@@ -455,6 +455,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="combining-data-sources">
 <h1>Combining data sources<a class="headerlink" href="#combining-data-sources" title="Permalink to this heading">#</a></h1>
 <p>Data can come from different files and you can combine them in a single dataframe.</p>
+<p>When working with data, storing data across multiple files or data sources is common. Combining data from different files or data sources into a single dataframe can be useful for data analysis and modelling.</p>
+<p>In Pandas, combining data from additional files or sources is done using the merge or join functions. These functions allow us to connect data based on a common key or index, which can be helpful when analyzing related data.</p>
+<p>This notebook will explore how to merge or join data from different files or sources into a single Pandas dataframe. We will also discuss different types of joins and merge operations and how to handle missing or duplicate data during the merging process.</p>
 <section id="how-to">
 <h2>How To<a class="headerlink" href="#how-to" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -1097,34 +1100,34 @@ document.write(`
       <td>...</td>
     </tr>
     <tr>
-      <th>20358</th>
-      <td>34.18</td>
-      <td>-118.95</td>
+      <th>11588</th>
+      <td>33.78</td>
+      <td>-118.01</td>
       <td>&lt;1H OCEAN</td>
     </tr>
     <tr>
-      <th>12591</th>
-      <td>38.51</td>
-      <td>-121.51</td>
-      <td>INLAND</td>
-    </tr>
-    <tr>
-      <th>6740</th>
-      <td>34.12</td>
-      <td>-118.09</td>
-      <td>&lt;1H OCEAN</td>
-    </tr>
-    <tr>
-      <th>20554</th>
-      <td>38.68</td>
-      <td>-121.78</td>
-      <td>INLAND</td>
-    </tr>
-    <tr>
-      <th>2307</th>
+      <th>2302</th>
       <td>36.83</td>
-      <td>-119.76</td>
+      <td>-119.78</td>
       <td>INLAND</td>
+    </tr>
+    <tr>
+      <th>6014</th>
+      <td>34.07</td>
+      <td>-117.79</td>
+      <td>INLAND</td>
+    </tr>
+    <tr>
+      <th>7177</th>
+      <td>34.05</td>
+      <td>-118.18</td>
+      <td>&lt;1H OCEAN</td>
+    </tr>
+    <tr>
+      <th>15999</th>
+      <td>37.75</td>
+      <td>-122.47</td>
+      <td>NEAR BAY</td>
     </tr>
   </tbody>
 </table>

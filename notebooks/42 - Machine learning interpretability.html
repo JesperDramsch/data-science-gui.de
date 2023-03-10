@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Validating machine learning models &#8212; Data Science and Machine Learning in Python</title>
+    <title>Machine learning interpretability &#8212; Data Science and Machine Learning in Python</title>
   
   
   
@@ -428,7 +428,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Validating machine learning models</h1>
+    <h1>Machine learning interpretability</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -454,9 +454,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="validating-machine-learning-models">
-<h1>Validating machine learning models<a class="headerlink" href="#validating-machine-learning-models" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="machine-learning-interpretability">
+<h1>Machine learning interpretability<a class="headerlink" href="#machine-learning-interpretability" title="Permalink to this heading">#</a></h1>
 <p>In modern day machine learning it is important to be able to explain how our models “think”. A simple accuracy score isn’t enough. This notebook explores the lesson on interpretability.</p>
+<p>Machine learning interpretability is an increasingly important topic in artificial intelligence.</p>
+<p>As machine learning models become more complex, understanding how they make predictions is becoming more difficult. This lack of transparency can lead to a lack of trust in the model. It can make it difficult to identify and correct errors. Interpretability is the ability to explain how a machine learning model arrived at a particular decision. It is essential to build trust and understanding in these powerful tools.</p>
+<p>This notebook will explore the importance of interpretability and provide practical examples of how it can be achieved.</p>
 <section id="how-to">
 <h2>How To<a class="headerlink" href="#how-to" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -620,7 +623,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6544813221043255
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6584692447914169
 </pre></div>
 </div>
 </div>
@@ -699,9 +702,9 @@ document.write(`
     
         <tr style="background-color: hsl(120, 100.00%, 80.00%); border: none;">
             <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-                0.5785
+                0.5610
                 
-                    &plusmn; 0.0192
+                    &plusmn; 0.0226
                 
             </td>
             <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
@@ -709,11 +712,11 @@ document.write(`
             </td>
         </tr>
     
-        <tr style="background-color: hsl(120, 100.00%, 94.20%); border: none;">
+        <tr style="background-color: hsl(120, 100.00%, 93.85%); border: none;">
             <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-                0.0988
+                0.1040
                 
-                    &plusmn; 0.0117
+                    &plusmn; 0.0128
                 
             </td>
             <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
@@ -721,11 +724,11 @@ document.write(`
             </td>
         </tr>
     
-        <tr style="background-color: hsl(120, 100.00%, 94.22%); border: none;">
+        <tr style="background-color: hsl(120, 100.00%, 94.03%); border: none;">
             <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-                0.0982
+                0.0997
                 
-                    &plusmn; 0.0109
+                    &plusmn; 0.0121
                 
             </td>
             <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
@@ -733,11 +736,11 @@ document.write(`
             </td>
         </tr>
     
-        <tr style="background-color: hsl(120, 100.00%, 94.84%); border: none;">
+        <tr style="background-color: hsl(120, 100.00%, 94.69%); border: none;">
             <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-                0.0834
+                0.0844
                 
-                    &plusmn; 0.0126
+                    &plusmn; 0.0146
                 
             </td>
             <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
@@ -745,27 +748,27 @@ document.write(`
             </td>
         </tr>
     
-        <tr style="background-color: hsl(120, 100.00%, 95.37%); border: none;">
+        <tr style="background-color: hsl(120, 100.00%, 94.93%); border: none;">
             <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-                0.0715
+                0.0789
                 
-                    &plusmn; 0.0099
-                
-            </td>
-            <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-                x1
-            </td>
-        </tr>
-    
-        <tr style="background-color: hsl(120, 100.00%, 95.46%); border: none;">
-            <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-                0.0697
-                
-                    &plusmn; 0.0140
+                    &plusmn; 0.0147
                 
             </td>
             <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
                 x4
+            </td>
+        </tr>
+    
+        <tr style="background-color: hsl(120, 100.00%, 95.25%); border: none;">
+            <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+                0.0720
+                
+                    &plusmn; 0.0104
+                
+            </td>
+            <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+                x1
             </td>
         </tr>
     
@@ -847,7 +850,7 @@ document.write(`
 </b>
 
     
-    (score <b>160507.000</b>)
+    (score <b>205448.000</b>)
 
 top features
         </p>
@@ -869,7 +872,7 @@ top features
         
             <tr style="background-color: hsl(120, 100.00%, 80.00%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +207717.639
+        +206139.071
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         &lt;BIAS&gt;
@@ -877,9 +880,19 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 97.77%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 95.12%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +9049.049
+        +27447.048
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        population
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(120, 100.00%, 96.45%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +17442.613
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         total_rooms
@@ -887,9 +900,19 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 97.88%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 97.17%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +8408.533
+        +12632.063
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        total_bedrooms
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(120, 100.00%, 99.64%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +671.938
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         housing_median_age
@@ -897,12 +920,12 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 98.63%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 99.72%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +4525.672
+        +468.234
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        total_bedrooms
+        households
     </td>
     
 </tr>
@@ -911,29 +934,9 @@ top features
 
         
         
-            <tr style="background-color: hsl(0, 100.00%, 99.46%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 91.63%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -1178.563
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        households
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(0, 100.00%, 97.57%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -10226.358
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        population
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(0, 100.00%, 91.83%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -57788.970
+        -59352.968
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         median_income
@@ -1034,7 +1037,7 @@ top features
 </b>
 
     
-    (score <b>491220.840</b>)
+    (score <b>185330.000</b>)
 
 top features
         </p>
@@ -1056,17 +1059,7 @@ top features
         
             <tr style="background-color: hsl(120, 100.00%, 80.00%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +292156.074
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        median_income
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(120, 100.00%, 84.25%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +207717.639
+        +206139.071
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         &lt;BIAS&gt;
@@ -1074,19 +1067,19 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 98.55%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 96.66%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +6868.368
+        +15985.800
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        households
+        total_bedrooms
     </td>
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 98.93%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 97.48%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +4468.008
+        +10659.781
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         population
@@ -1094,22 +1087,12 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 99.06%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 99.28%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +3727.273
+        +1779.382
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        total_rooms
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(120, 100.00%, 99.70%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +716.294
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        total_bedrooms
+        housing_median_age
     </td>
     
 </tr>
@@ -1118,12 +1101,32 @@ top features
 
         
         
-            <tr style="background-color: hsl(0, 100.00%, 96.48%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 98.93%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -24432.816
+        -3129.288
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        housing_median_age
+        households
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(0, 100.00%, 96.02%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -20557.991
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        median_income
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(0, 100.00%, 95.36%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -25546.754
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        total_rooms
     </td>
     
 </tr>
@@ -1221,7 +1224,7 @@ top features
 </b>
 
     
-    (score <b>165788.000</b>)
+    (score <b>339392.020</b>)
 
 top features
         </p>
@@ -1243,7 +1246,7 @@ top features
         
             <tr style="background-color: hsl(120, 100.00%, 80.00%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +207717.639
+        +206139.071
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         &lt;BIAS&gt;
@@ -1251,19 +1254,29 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 97.26%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 88.16%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +12169.625
+        +97522.328
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        total_rooms
+        median_income
     </td>
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 97.43%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 91.12%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +11106.797
+        +64602.195
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        housing_median_age
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(120, 100.00%, 99.47%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +1147.449
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         households
@@ -1271,12 +1284,12 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 98.64%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 99.81%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +4451.026
+        +273.983
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        housing_median_age
+        total_rooms
     </td>
     
 </tr>
@@ -1285,19 +1298,9 @@ top features
 
         
         
-            <tr style="background-color: hsl(0, 100.00%, 99.72%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 97.02%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -478.669
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        total_bedrooms
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(0, 100.00%, 97.03%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -13651.994
+        -13557.941
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         population
@@ -1305,12 +1308,12 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(0, 100.00%, 92.06%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 96.55%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -55526.424
+        -16735.065
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        median_income
+        total_bedrooms
     </td>
     
 </tr>
@@ -1408,7 +1411,7 @@ top features
 </b>
 
     
-    (score <b>202391.000</b>)
+    (score <b>179690.000</b>)
 
 top features
         </p>
@@ -1430,7 +1433,7 @@ top features
         
             <tr style="background-color: hsl(120, 100.00%, 80.00%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +207717.639
+        +206139.071
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         &lt;BIAS&gt;
@@ -1438,12 +1441,32 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 91.59%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 94.09%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +60276.452
+        +36149.268
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        total_bedrooms
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(120, 100.00%, 98.14%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +6908.986
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         median_income
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(120, 100.00%, 99.10%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +2464.349
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        housing_median_age
     </td>
     
 </tr>
@@ -1452,29 +1475,9 @@ top features
 
         
         
-            <tr style="background-color: hsl(0, 100.00%, 98.61%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 97.97%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -4581.064
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        population
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(0, 100.00%, 98.05%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -7477.359
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        total_bedrooms
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(0, 100.00%, 97.87%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -8461.803
+        -7866.746
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         households
@@ -1482,9 +1485,9 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(0, 100.00%, 97.60%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 96.94%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -10073.393
+        -14116.874
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         total_rooms
@@ -1492,12 +1495,12 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(0, 100.00%, 94.25%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 92.58%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -35009.472
+        -49988.054
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        housing_median_age
+        population
     </td>
     
 </tr>
@@ -1595,7 +1598,7 @@ top features
 </b>
 
     
-    (score <b>257055.060</b>)
+    (score <b>159181.000</b>)
 
 top features
         </p>
@@ -1617,7 +1620,7 @@ top features
         
             <tr style="background-color: hsl(120, 100.00%, 80.00%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +207717.639
+        +206139.071
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         &lt;BIAS&gt;
@@ -1625,9 +1628,9 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 89.56%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 96.13%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +82089.284
+        +19745.506
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         median_income
@@ -1635,9 +1638,9 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(120, 100.00%, 96.24%); border: none;">
+            <tr style="background-color: hsl(120, 100.00%, 99.92%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        +19097.146
+        +72.335
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         total_bedrooms
@@ -1649,19 +1652,9 @@ top features
 
         
         
-            <tr style="background-color: hsl(0, 100.00%, 99.79%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 98.57%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -308.388
-    </td>
-    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        households
-    </td>
-    
-</tr>
-        
-            <tr style="background-color: hsl(0, 100.00%, 97.90%); border: none;">
-    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -8277.651
+        -4773.303
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         total_rooms
@@ -1669,22 +1662,32 @@ top features
     
 </tr>
         
-            <tr style="background-color: hsl(0, 100.00%, 96.39%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 97.64%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -17992.405
+        -9732.485
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
-        housing_median_age
+        households
     </td>
     
 </tr>
         
-            <tr style="background-color: hsl(0, 100.00%, 95.42%); border: none;">
+            <tr style="background-color: hsl(0, 100.00%, 96.70%); border: none;">
     <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
-        -25270.564
+        -15722.094
     </td>
     <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
         population
+    </td>
+    
+</tr>
+        
+            <tr style="background-color: hsl(0, 100.00%, 94.04%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -36548.030
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        housing_median_age
     </td>
     
 </tr>
@@ -1752,16 +1755,16 @@ top features
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;importances_mean&#39;: array([0.31763435, 0.20787052, 0.41685344, 0.39809293, 0.24201084,
-        1.57062292]),
- &#39;importances_std&#39;: array([0.00404439, 0.00392558, 0.00600827, 0.00435093, 0.00255731,
-        0.0153068 ]),
- &#39;importances&#39;: array([[0.32069509, 0.32061051, 0.32045565, 0.31034465, 0.31606583],
-        [0.20997267, 0.21379794, 0.20255792, 0.20818284, 0.20484125],
-        [0.40761432, 0.42463523, 0.42077322, 0.4127777 , 0.41846673],
-        [0.39659077, 0.40035032, 0.39073703, 0.39900504, 0.40378148],
-        [0.23911115, 0.23974486, 0.24534163, 0.24114241, 0.24471415],
-        [1.57057666, 1.56367977, 1.59792019, 1.5511971 , 1.56974089]])}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;importances_mean&#39;: array([0.31626273, 0.21255127, 0.37301043, 0.43334126, 0.37401933,
+        1.53786332]),
+ &#39;importances_std&#39;: array([0.00502779, 0.00290456, 0.00525977, 0.00588749, 0.00623483,
+        0.01878439]),
+ &#39;importances&#39;: array([[0.31866778, 0.30895716, 0.32388198, 0.31324667, 0.31656004],
+        [0.21584408, 0.20935244, 0.20917793, 0.21566585, 0.21271606],
+        [0.36405224, 0.37500301, 0.37548939, 0.37960667, 0.37090084],
+        [0.44094941, 0.4385342 , 0.42480585, 0.42940416, 0.4330127 ],
+        [0.36872276, 0.38167445, 0.37389853, 0.38015281, 0.36564812],
+        [1.562904  , 1.53012007, 1.54048758, 1.54878249, 1.50702247]])}
 </pre></div>
 </div>
 </div>
@@ -1780,10 +1783,10 @@ top features
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.inspection._plot.partial_dependence.PartialDependenceDisplay at 0x7f577f38c580&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.inspection._plot.partial_dependence.PartialDependenceDisplay at 0x7fc9c7a4cfa0&gt;
 </pre></div>
 </div>
-<img alt="../_images/cb0c549f831acf1dd494c025c0720b01b3f32e29c0eb2af31e8e5228f46c2e80.png" src="../_images/cb0c549f831acf1dd494c025c0720b01b3f32e29c0eb2af31e8e5228f46c2e80.png" />
+<img alt="../_images/b53fdb844e8593082aaf0f280af8e633bb8518274bd4cf08341d1f2c1e5a7f08.png" src="../_images/b53fdb844e8593082aaf0f280af8e633bb8518274bd4cf08341d1f2c1e5a7f08.png" />
 </div>
 </div>
 </section>
@@ -1812,7 +1815,7 @@ top features
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;shap.explainers.tree.TreeExplainer at 0x7f577cd57eb0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;shap.explainers.tree.TreeExplainer at 0x7fc9c51e4130&gt;
 </pre></div>
 </div>
 </div>

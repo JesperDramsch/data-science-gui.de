@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://data-science-gui.de/notebooks/41 - Validating machine learning models.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Validating machine learning models" href="42%20-%20Machine%20learning%20interpretability.html" />
+    <link rel="next" title="Machine learning interpretability" href="42%20-%20Machine%20learning%20interpretability.html" />
     <link rel="prev" title="Machine Learning Evaluation" href="../text/machine-learning-evaluation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -457,6 +457,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="validating-machine-learning-models">
 <h1>Validating machine learning models<a class="headerlink" href="#validating-machine-learning-models" title="Permalink to this heading">#</a></h1>
 <p>Once we built a machine learning model, we need to validate that this model learnt something meaningful from our training. This part is machine learning validation.</p>
+<p>Validating a machine learning model is essential in developing any data-driven solution.</p>
+<p>It ensures that the model performs as intended and has learned relevant patterns from the data. Validation involves assessing a model’s accuracy, reliability, and generalization performance. Machine learning validation is crucial because models can easily overfit the training data, making them unreliable in real-world scenarios.</p>
+<p>This process involves splitting the data into training and validation sets, evaluating the model’s performance on the validation set, and tuning the model parameters until an acceptable level of performance is achieved.</p>
 <section id="how-to">
 <h2>How To<a class="headerlink" href="#how-to" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -608,7 +611,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.659938936604132
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6572795491544173
 </pre></div>
 </div>
 </div>
@@ -630,7 +633,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.65290441, 0.66108476, 0.65989112, 0.58799331, 0.65253954])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.64393328, 0.61215952, 0.67508638, 0.6075547 , 0.62659287])
 </pre></div>
 </div>
 </div>
@@ -642,8 +645,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([131288.  , 236318.02, 221244.  , ..., 440678.19, 189359.04,
-       105477.  ])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([467779.66, 144587.  , 127115.  , ..., 261427.  , 175718.  ,
+       355415.18])
 </pre></div>
 </div>
 </div>
@@ -685,7 +688,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-3.510623121094625e-07
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.0005440615780256675
 </pre></div>
 </div>
 </div>
@@ -697,8 +700,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([206152.40763396, 206152.40763396, 206152.40763396, ...,
-       207169.32191781, 207169.32191781, 207169.32191781])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([205535.9640323 , 205535.9640323 , 205535.9640323 , ...,
+       205592.58537182, 205592.58537182, 205592.58537182])
 </pre></div>
 </div>
 </div>
@@ -739,7 +742,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.44498825371965545
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.4465544244322631
 </pre></div>
 </div>
 </div>
@@ -758,7 +761,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6004306969459671
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6066953797963978
 </pre></div>
 </div>
 </div>
@@ -770,7 +773,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.59099804, 0.58610568, 0.58023483, 0.59393346, 0.59451518])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.59882583, 0.57925636, 0.57729941, 0.59099804, 0.59745348])
 </pre></div>
 </div>
 </div>
@@ -782,7 +785,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.44618395, 0.44716243, 0.44716243, 0.44618395, 0.44662096])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.45499022, 0.45499022, 0.45499022, 0.45401174, 0.45445642])
 </pre></div>
 </div>
 </div>
@@ -851,7 +854,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Validating machine learning models</p>
+        <p class="prev-next-title">Machine learning interpretability</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
