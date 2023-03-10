@@ -1,4 +1,5 @@
 jupyter-book
+sphinx-sitemap
 ghp-import
 eli5==0.10.1
 folium==0.11.0
