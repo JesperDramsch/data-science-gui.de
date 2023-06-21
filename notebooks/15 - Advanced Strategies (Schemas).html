@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/15 - Advanced Strategies (Schemas)';</script>
-    <link rel="canonical" href="https://ml.recipes/notebooks/15 - Advanced Strategies (Schemas).html" />
+    <link rel="canonical" href="https://data-science-gui.de/notebooks/15 - Advanced Strategies (Schemas).html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Advanced Strategies (Encoding)" href="16%20-%20Advanced%20Strategies%20%28Encoding%29.html" />
@@ -1428,7 +1428,7 @@ document.write(`
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">schema</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">DataFrameSchema</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/pandera/schemas.py:143,</span> in <span class="ni">DataFrameSchema.__init__</span><span class="nt">(self, columns, checks, index, transformer, coerce, strict, name)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandera/schemas.py:143,</span> in <span class="ni">DataFrameSchema.__init__</span><span class="nt">(self, columns, checks, index, transformer, coerce, strict, name)</span>
 <span class="g g-Whitespace">    </span><span class="mi">141</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 <span class="g g-Whitespace">    </span><span class="mi">142</span> <span class="bp">self</span><span class="o">.</span><span class="n">_coerce</span> <span class="o">=</span> <span class="n">coerce</span>
 <span class="ne">--&gt; </span><span class="mi">143</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_schema</span><span class="p">()</span>
@@ -1436,11 +1436,11 @@ document.write(`
 <span class="g g-Whitespace">    </span><span class="mi">146</span> <span class="c1"># this attribute is not meant to be accessed by users and is explicitly</span>
 <span class="g g-Whitespace">    </span><span class="mi">147</span> <span class="c1"># set to True in the case that a schema is created by infer_schema.</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/pandera/schemas.py:165,</span> in <span class="ni">DataFrameSchema._validate_schema</span><span class="nt">(self)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandera/schemas.py:165,</span> in <span class="ni">DataFrameSchema._validate_schema</span><span class="nt">(self)</span>
 <span class="g g-Whitespace">    </span><span class="mi">164</span> <span class="k">def</span> <span class="nf">_validate_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="ne">--&gt; </span><span class="mi">165</span>     <span class="k">for</span> <span class="n">column_name</span><span class="p">,</span> <span class="n">column</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
 <span class="g g-Whitespace">    </span><span class="mi">166</span>         <span class="k">for</span> <span class="n">check</span> <span class="ow">in</span> <span class="n">column</span><span class="o">.</span><span class="n">checks</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">167</span>             <span class="k">if</span> <span class="n">check</span><span class="o">.</span><span class="n">groupby</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">callable</span><span class="p">(</span><span class="n">check</span><span class="o">.</span><span class="n">groupby</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">167</span>             <span class="k">if</span> <span class="n">check</span><span class="o">.</span><span class="n">groupby</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">callable</span><span class="p">(</span><span class="n">check</span><span class="o">.</span><span class="n">groupby</span><span class="p">):</span>
 
 <span class="ne">AttributeError</span>: &#39;ellipsis&#39; object has no attribute &#39;items&#39;
 </pre></div>

@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/12 - Formatting and deduping data';</script>
-    <link rel="canonical" href="https://ml.recipes/notebooks/12 - Formatting and deduping data.html" />
+    <link rel="canonical" href="https://data-science-gui.de/notebooks/12 - Formatting and deduping data.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Scaling and binning data" href="14%20-%20Scaling%20and%20binning%20data.html" />
@@ -696,11 +696,11 @@ Name: ocean_proximity, Length: 20640, dtype: bool
 3        False
 4        False
          ...  
-12994     True
-18730     True
-17325     True
-17412     True
-3546      True
+4157      True
+15412     True
+2893      True
+15759     True
+11549     True
 Length: 20645, dtype: bool
 </pre></div>
 </div>
@@ -726,11 +726,11 @@ Length: 20645, dtype: bool
 3        False
 4        False
          ...  
-1369      True
-16958     True
-3184      True
-19197     True
-12175     True
+20191     True
+13191     True
+6677      True
+4698      True
+2934      True
 Length: 20645, dtype: bool
 </pre></div>
 </div>
@@ -935,7 +935,7 @@ Length: 20645, dtype: bool
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="nn">File /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py:2646,</span> in <span class="ni">Index.get_loc</span><span class="nt">(self, key, method, tolerance)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py:2646,</span> in <span class="ni">Index.get_loc</span><span class="nt">(self, key, method, tolerance)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2645</span> <span class="k">try</span><span class="p">:</span>
 <span class="ne">-&gt; </span><span class="mi">2646</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2647</span> <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
@@ -956,14 +956,14 @@ Length: 20645, dtype: bool
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span><span class="p">[</span><span class="o">...</span><span class="p">]</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/pandas/core/frame.py:2800,</span> in <span class="ni">DataFrame.__getitem__</span><span class="nt">(self, key)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/frame.py:2800,</span> in <span class="ni">DataFrame.__getitem__</span><span class="nt">(self, key)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2798</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">nlevels</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
 <span class="g g-Whitespace">   </span><span class="mi">2799</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_getitem_multilevel</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="ne">-&gt; </span><span class="mi">2800</span> <span class="n">indexer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2801</span> <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">indexer</span><span class="p">):</span>
 <span class="g g-Whitespace">   </span><span class="mi">2802</span>     <span class="n">indexer</span> <span class="o">=</span> <span class="p">[</span><span class="n">indexer</span><span class="p">]</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py:2648,</span> in <span class="ni">Index.get_loc</span><span class="nt">(self, key, method, tolerance)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py:2648,</span> in <span class="ni">Index.get_loc</span><span class="nt">(self, key, method, tolerance)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2646</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2647</span>     <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
 <span class="ne">-&gt; </span><span class="mi">2648</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_maybe_cast_indexer</span><span class="p">(</span><span class="n">key</span><span class="p">))</span>
