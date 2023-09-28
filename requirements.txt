@@ -4,7 +4,7 @@ ghp-import
 eli5>=0.10.1
 folium>=0.11.0
 jupyter>=1.0.0
-matplotlib>==3.3.0
+matplotlib>=3.3.0
 missingno>=0.4.2
 numpy>=1.19.1
 pandas>=1.0.5
