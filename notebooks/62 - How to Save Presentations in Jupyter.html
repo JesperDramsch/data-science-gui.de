@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -54,7 +55,6 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script data-domain="data-science-gui.de" defer="defer" src="https://plausible.io/js/script.js"></script>
-    <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2158291969836277"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -77,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -138,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../welcome.html">
+<a class="navbar-brand logo" href="../index.html">
   
   
   
@@ -152,7 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../welcome.html">
+                <a class="reference internal" href="../index.html">
                     Data Science and Machine Learning in Python
                 </a>
             </li>
@@ -399,10 +408,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -410,7 +419,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -581,10 +590,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f0160390d30&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f439c1c4ca0&gt;
 </pre></div>
 </div>
-<img alt="../_images/ad277777cef98b8cd5ec85c0676c19e80f3ec7b668ff2c063241eab2849af5f9.png" src="../_images/ad277777cef98b8cd5ec85c0676c19e80f3ec7b668ff2c063241eab2849af5f9.png" />
+<img alt="../_images/6d53df312ae994f2988ba264f50a42b9eefafaa54fb557aa216e54eac545cfdc.png" src="../_images/6d53df312ae994f2988ba264f50a42b9eefafaa54fb557aa216e54eac545cfdc.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -596,10 +605,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f012c4cb550&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f43694f8c10&gt;
 </pre></div>
 </div>
-<img alt="../_images/843f61fc87e20d8f9920e2930700cbb734af2cdd6bf309d6f45237c444a636b7.png" src="../_images/843f61fc87e20d8f9920e2930700cbb734af2cdd6bf309d6f45237c444a636b7.png" />
+<img alt="../_images/4ad3fc72619eed641a3180fceca2f6c17536ca40ab0c4da5c875f6f18fb15b1a.png" src="../_images/4ad3fc72619eed641a3180fceca2f6c17536ca40ab0c4da5c875f6f18fb15b1a.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -610,7 +619,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/72c3f60cf7b52cd64480afd9e6fd60949f9df4daaf3268927bec312f3b4e7dec.png" src="../_images/72c3f60cf7b52cd64480afd9e6fd60949f9df4daaf3268927bec312f3b4e7dec.png" />
+<img alt="../_images/5b097194c6a2500836736231c40dc20254a5b8965ba29750b16984d0603e029f.png" src="../_images/5b097194c6a2500836736231c40dc20254a5b8965ba29750b16984d0603e029f.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -620,10 +629,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.JointGrid at 0x7f0128a7e580&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="s2">&quot;households&quot;</span><span class="p">,</span> <span class="s2">&quot;total_bedrooms&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: jointplot() takes from 0 to 1 positional arguments but 3 were given
 </pre></div>
 </div>
-<img alt="../_images/e36cefc91058294dccb0490da7580a6b1fce1867cfe98e927c4757e4c5c622af.png" src="../_images/e36cefc91058294dccb0490da7580a6b1fce1867cfe98e927c4757e4c5c622af.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -633,10 +646,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.JointGrid at 0x7f0128ad7940&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="s2">&quot;population&quot;</span><span class="p">,</span> <span class="s2">&quot;total_bedrooms&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;reg&quot;</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: jointplot() takes from 0 to 1 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
 </pre></div>
 </div>
-<img alt="../_images/fdc6037d89c3afc8f2797eaf84da2953b6f90e3bd395a64be4303ba70af1668a.png" src="../_images/fdc6037d89c3afc8f2797eaf84da2953b6f90e3bd395a64be4303ba70af1668a.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -646,10 +663,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.JointGrid at 0x7f01294c61f0&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="s2">&quot;households&quot;</span><span class="p">,</span> <span class="s2">&quot;total_bedrooms&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;reg&quot;</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: jointplot() takes from 0 to 1 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
 </pre></div>
 </div>
-<img alt="../_images/0e3e98801a78a3712651d36c33da78e519e497650bfd73954f028cc5ffa65a7b.png" src="../_images/0e3e98801a78a3712651d36c33da78e519e497650bfd73954f028cc5ffa65a7b.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -659,10 +680,43 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py:10054,</span> in <span class="ni">DataFrame.corr</span><span class="nt">(self, method, min_periods, numeric_only)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10052</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+<span class="g g-Whitespace">  </span><span class="mi">10053</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">cols</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="ne">&gt; </span><span class="mi">10054</span> <span class="n">mat</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10056</span> <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;pearson&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">  </span><span class="mi">10057</span>     <span class="n">correl</span> <span class="o">=</span> <span class="n">libalgos</span><span class="o">.</span><span class="n">nancorr</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">minp</span><span class="o">=</span><span class="n">min_periods</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py:1838,</span> in <span class="ni">DataFrame.to_numpy</span><span class="nt">(self, dtype, copy, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1836</span> <span class="k">if</span> <span class="n">dtype</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1837</span>     <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1838</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mgr</span><span class="o">.</span><span class="n">as_array</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">na_value</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1839</span> <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">dtype</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">dtype</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1840</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/managers.py:1732,</span> in <span class="ni">BlockManager.as_array</span><span class="nt">(self, dtype, copy, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1730</span>         <span class="n">arr</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">writeable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">   </span><span class="mi">1731</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1732</span>     <span class="n">arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interleave</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">na_value</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1733</span>     <span class="c1"># The underlying data was copied within _interleave, so no need</span>
+<span class="g g-Whitespace">   </span><span class="mi">1734</span>     <span class="c1"># to further copy if copy=True or setting na_value</span>
+<span class="g g-Whitespace">   </span><span class="mi">1736</span> <span class="k">if</span> <span class="n">na_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">lib</span><span class="o">.</span><span class="n">no_default</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/managers.py:1794,</span> in <span class="ni">BlockManager._interleave</span><span class="nt">(self, dtype, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1792</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1793</span>         <span class="n">arr</span> <span class="o">=</span> <span class="n">blk</span><span class="o">.</span><span class="n">get_values</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1794</span>     <span class="n">result</span><span class="p">[</span><span class="n">rl</span><span class="o">.</span><span class="n">indexer</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="g g-Whitespace">   </span><span class="mi">1795</span>     <span class="n">itemmask</span><span class="p">[</span><span class="n">rl</span><span class="o">.</span><span class="n">indexer</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="g g-Whitespace">   </span><span class="mi">1797</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">itemmask</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+
+<span class="ne">ValueError</span>: could not convert string to float: &#39;NEAR BAY&#39;
 </pre></div>
 </div>
-<img alt="../_images/cb02c9af6fb8ca5e53bbd933ca1ba133342816dfd5e377d406865011da973b94.png" src="../_images/cb02c9af6fb8ca5e53bbd933ca1ba133342816dfd5e377d406865011da973b94.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -672,10 +726,43 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py:10054,</span> in <span class="ni">DataFrame.corr</span><span class="nt">(self, method, min_periods, numeric_only)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10052</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+<span class="g g-Whitespace">  </span><span class="mi">10053</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">cols</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="ne">&gt; </span><span class="mi">10054</span> <span class="n">mat</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10056</span> <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;pearson&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">  </span><span class="mi">10057</span>     <span class="n">correl</span> <span class="o">=</span> <span class="n">libalgos</span><span class="o">.</span><span class="n">nancorr</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">minp</span><span class="o">=</span><span class="n">min_periods</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py:1838,</span> in <span class="ni">DataFrame.to_numpy</span><span class="nt">(self, dtype, copy, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1836</span> <span class="k">if</span> <span class="n">dtype</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1837</span>     <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1838</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mgr</span><span class="o">.</span><span class="n">as_array</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">na_value</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1839</span> <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">dtype</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">dtype</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1840</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/managers.py:1732,</span> in <span class="ni">BlockManager.as_array</span><span class="nt">(self, dtype, copy, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1730</span>         <span class="n">arr</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">writeable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">   </span><span class="mi">1731</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1732</span>     <span class="n">arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interleave</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">na_value</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1733</span>     <span class="c1"># The underlying data was copied within _interleave, so no need</span>
+<span class="g g-Whitespace">   </span><span class="mi">1734</span>     <span class="c1"># to further copy if copy=True or setting na_value</span>
+<span class="g g-Whitespace">   </span><span class="mi">1736</span> <span class="k">if</span> <span class="n">na_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">lib</span><span class="o">.</span><span class="n">no_default</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/managers.py:1794,</span> in <span class="ni">BlockManager._interleave</span><span class="nt">(self, dtype, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1792</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1793</span>         <span class="n">arr</span> <span class="o">=</span> <span class="n">blk</span><span class="o">.</span><span class="n">get_values</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1794</span>     <span class="n">result</span><span class="p">[</span><span class="n">rl</span><span class="o">.</span><span class="n">indexer</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="g g-Whitespace">   </span><span class="mi">1795</span>     <span class="n">itemmask</span><span class="p">[</span><span class="n">rl</span><span class="o">.</span><span class="n">indexer</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="g g-Whitespace">   </span><span class="mi">1797</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">itemmask</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+
+<span class="ne">ValueError</span>: could not convert string to float: &#39;NEAR BAY&#39;
 </pre></div>
 </div>
-<img alt="../_images/0f8b4495f89ab2e1b54f58ab47f6f5029f25521350174408a98f7023434e5a74.png" src="../_images/0f8b4495f89ab2e1b54f58ab47f6f5029f25521350174408a98f7023434e5a74.png" />
 </div>
 </div>
 </section>
@@ -716,16 +803,12 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -793,8 +876,8 @@ By Jesper Dramsch
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

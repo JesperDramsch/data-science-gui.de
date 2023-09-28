@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -54,7 +55,6 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script data-domain="data-science-gui.de" defer="defer" src="https://plausible.io/js/script.js"></script>
-    <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2158291969836277"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -79,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -140,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../welcome.html">
+<a class="navbar-brand logo" href="../index.html">
   
   
   
@@ -154,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../welcome.html">
+                <a class="reference internal" href="../index.html">
                     Data Science and Machine Learning in Python
                 </a>
             </li>
@@ -401,10 +410,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -412,7 +421,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -484,10 +493,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="../_images/49fa3c5b0f4ee577cd592dc9a2396b862cc803cbfc68454c026a16a3b2c74394.png" src="../_images/49fa3c5b0f4ee577cd592dc9a2396b862cc803cbfc68454c026a16a3b2c74394.png" />
+<img alt="../_images/ad07029a356bf5c93208e78a0c236004a92959aa08ed5e192aa5a3f559af4b52.png" src="../_images/ad07029a356bf5c93208e78a0c236004a92959aa08ed5e192aa5a3f559af4b52.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -683,10 +692,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="../_images/7b292629add369d4c7e055d3bb9e72bbf15ffeb3980d3328ef085606f91313fe.png" src="../_images/7b292629add369d4c7e055d3bb9e72bbf15ffeb3980d3328ef085606f91313fe.png" />
+<img alt="../_images/e38474c183b2c1c1351f37aa3687c6b2f8515ce1051db6b9259e720ba6da9a5e.png" src="../_images/e38474c183b2c1c1351f37aa3687c6b2f8515ce1051db6b9259e720ba6da9a5e.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -886,10 +895,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="../_images/2dad139d68e37d3f8440c5dc834a0682188a922db8f3ad41a18b46aa97cc7169.png" src="../_images/2dad139d68e37d3f8440c5dc834a0682188a922db8f3ad41a18b46aa97cc7169.png" />
+<img alt="../_images/20b486917779340fc95d8cfc4c9a0610f10b4df7c4dc879f00d6d1e585615819.png" src="../_images/20b486917779340fc95d8cfc4c9a0610f10b4df7c4dc879f00d6d1e585615819.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -899,10 +908,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="../_images/ad420f4e2a4d376777da01975b984bcb15cbec51fbed997b5a29bd316b31c15c.png" src="../_images/ad420f4e2a4d376777da01975b984bcb15cbec51fbed997b5a29bd316b31c15c.png" />
+<img alt="../_images/64d0d084e3a18cb361a4f0c5a1bb85d078cd20ecbcd3240d5d2e4897ae637cac.png" src="../_images/64d0d084e3a18cb361a4f0c5a1bb85d078cd20ecbcd3240d5d2e4897ae637cac.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -912,10 +921,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="../_images/81fe852c3e754582e74db3ca1286c29355faac9b2c5a1f98670dd6f16ed30e27.png" src="../_images/81fe852c3e754582e74db3ca1286c29355faac9b2c5a1f98670dd6f16ed30e27.png" />
+<img alt="../_images/6eb5ac0a225493c1f763a34ffda2760c95241c54604195294d3ec2c1761c4c6d.png" src="../_images/6eb5ac0a225493c1f763a34ffda2760c95241c54604195294d3ec2c1761c4c6d.png" />
 </div>
 </div>
 </section>
@@ -1242,29 +1251,30 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quilt in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (2.9.15)
-Requirement already satisfied: appdirs&gt;=1.4.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (1.4.4)
-Requirement already satisfied: future&gt;=0.16.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (0.18.3)
-Requirement already satisfied: numpy&gt;=1.14.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (1.19.1)
-Requirement already satisfied: packaging&gt;=16.8 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (23.1)
-Requirement already satisfied: pandas&gt;=0.21.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (1.0.5)
-Requirement already satisfied: pyarrow&gt;=0.9.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (12.0.1)
-Requirement already satisfied: pyyaml&gt;=3.12 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (6.0)
-Requirement already satisfied: requests&gt;=2.12.4 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (2.31.0)
-Requirement already satisfied: six&gt;=1.10.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (1.16.0)
-Requirement already satisfied: tqdm&gt;=4.11.2 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (4.65.0)
-Requirement already satisfied: xlrd&gt;=1.0.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from quilt) (2.0.1)
-Requirement already satisfied: python-dateutil&gt;=2.6.1 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2.8.2)
-Requirement already satisfied: pytz&gt;=2017.2 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2023.3)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quilt in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (2.9.15)
+Requirement already satisfied: appdirs&gt;=1.4.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (1.4.4)
+Requirement already satisfied: future&gt;=0.16.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (0.18.3)
+Requirement already satisfied: numpy&gt;=1.14.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (1.23.5)
+Requirement already satisfied: packaging&gt;=16.8 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (23.1)
+Requirement already satisfied: pandas&gt;=0.21.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (2.0.3)
+Requirement already satisfied: pyarrow&gt;=0.9.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (13.0.0)
+Requirement already satisfied: pyyaml&gt;=3.12 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (6.0.1)
+Requirement already satisfied: requests&gt;=2.12.4 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (2.31.0)
+Requirement already satisfied: six&gt;=1.10.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (1.16.0)
+Requirement already satisfied: tqdm&gt;=4.11.2 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (4.66.1)
+Requirement already satisfied: xlrd&gt;=1.0.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from quilt) (2.0.1)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.1.0)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.4)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2.0.3)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2023.5.7)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: python-dateutil&gt;=2.8.2 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2.8.2)
+Requirement already satisfied: pytz&gt;=2020.1 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2023.3.post1)
+Requirement already satisfied: tzdata&gt;=2022.1 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from pandas&gt;=0.21.0-&gt;quilt) (2023.3)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.2.0)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (3.4)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2.0.5)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from requests&gt;=2.12.4-&gt;quilt) (2023.7.22)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">23.0.1</span> -&gt; <span class=" -Color -Color-Green">23.1.2</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">23.0.1</span> -&gt; <span class=" -Color -Color-Green">23.2.1</span>
 <span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
 </pre></div>
 </div>
@@ -1279,13 +1289,10 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Pyt
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0%|                                                | 0.00/420k [00:00&lt;?, ?B/s]
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 17%|██████▋                                 | 70.2k/420k [00:00&lt;00:00, 626kB/s]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 40%|███████████████▉                        | 167k/420k [00:00&lt;00:00, 1.43MB/s]
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 50%|████████████████████▌                    | 211k/420k [00:00&lt;00:00, 991kB/s]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|█████████████████████████████████████████| 420k/420k [00:00&lt;00:00, 581kB/s]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|█████████████████████████████████████████| 420k/420k [00:00&lt;00:00, 792kB/s]
 </pre></div>
 </div>
 </div>
@@ -1326,11 +1333,10 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Pyt
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="05%20-%20Combining%20data%20sources.html"
@@ -1350,10 +1356,7 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Pyt
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1423,8 +1426,8 @@ By Jesper Dramsch
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

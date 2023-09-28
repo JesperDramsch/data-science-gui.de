@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -54,7 +55,6 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script data-domain="data-science-gui.de" defer="defer" src="https://plausible.io/js/script.js"></script>
-    <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2158291969836277"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -79,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -140,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../welcome.html">
+<a class="navbar-brand logo" href="../index.html">
   
   
   
@@ -154,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../welcome.html">
+                <a class="reference internal" href="../index.html">
                     Data Science and Machine Learning in Python
                 </a>
             </li>
@@ -401,10 +410,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -412,7 +421,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -600,7 +609,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6591760433427488
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6328756772391189
 </pre></div>
 </div>
 </div>
@@ -643,61 +652,60 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NEAR BAY
-0.6221809674601577
+0.5874694384661552
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.51797763 0.55796355 0.58732415 0.58699742 0.54885348]
-0.5598232442288154  +-  0.025959912257221447 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.49000498 0.56786913 0.46456944 0.56210463 0.51742665]
+0.5203949666824064  +-  0.04010572053825477 
 
-0.5840307630552714
+0.5941744695020084
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.67480731 0.52409672 0.38916289 0.54316533 0.5335586 ]
-0.5329581684844772  +-  0.09053323533502806 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.63556485 0.51573472 0.53511419 0.5367995  0.47047662]
+0.5387379746987022  +-  0.054002028186836075 
 
 &lt;1H OCEAN
-0.6253509744440715
+0.6002927846861378
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.57207985 0.65475127 0.60299944 0.57880039 0.66118562]
-0.6139633114609016  +-  0.037428505970983926 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.54331994 0.59147992 0.60801846 0.60636129 0.61441682]
+0.5927192871348315  +-  0.02581775768496149 
 
-0.6305149795029275
+0.5709698091961515
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.63499012 0.63570058 0.58524967 0.64498096 0.64938604]
-0.6300614729074033  +-  0.023066075784103766 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.60685386 0.61168428 0.60834378 0.5916921  0.59591272]
+0.6028973481988532  +-  0.007705457305446662 
 
 INLAND
-0.25616657675802834
+0.1069308282198721
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.52610419 0.55745914 0.5043725  0.43354568 0.38287376]
-0.4808710546655136  +-  0.06372950660305468 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.4406379  0.29849585 0.35335389 0.4704253  0.43382211]
+0.399347010288433  +-  0.06361118936449235 
 
-0.21488449306224244
+0.24130339500317055
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.3767369  0.56879769 0.43924568 0.54468902 0.48442732]
-0.48277932153642505  +-  0.06982099856513742 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.42063245 0.50010183 0.50264222 0.5200486  0.47104822]
+0.48289466494817557  +-  0.034880908673218 
 
 NEAR OCEAN
-0.6016065090627922
+0.5553022565877173
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.50438066 0.55072394 0.64970588 0.62906184 0.55529315]
-0.57783309569145  +-  0.053718334239458224 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.59087924 0.61013158 0.56634436 0.59297488 0.58197008]
+0.5884600283083697  +-  0.014332585291184476 
 
-0.5471628075132269
+0.5722791227801622
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.56997491 0.53120902 0.55914833 0.62421752 0.47943907]
-0.5527977695451674  +-  0.04750523313338761 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.54455321 0.50008709 0.61152211 0.51188922 0.64682443]
+0.5629752126830029  +-  0.05708162059029045 
 
 ISLAND
--4.673855841590522
+-12.348188077626373
 Error in Validation
-nan
 Error in Test
 </pre></div>
 </div>
@@ -712,8 +720,6 @@ Error in Test
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -722,10 +728,354 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/081291e426b4616f93f2c55aeb7568024cddf0b1fd2a209296a96b35d8ca81b5.png" src="../_images/081291e426b4616f93f2c55aeb7568024cddf0b1fd2a209296a96b35d8ca81b5.png" />
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ResidualsPlot(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;Residuals for RandomForestRegressor Model&#39;}, xlabel=&#39;Predicted Value&#39;, ylabel=&#39;Residuals&#39;&gt;,
-              line_color=None, model=None, test_alpha=None, test_color=None,
-              train_alpha=None, train_color=None)
+<img alt="../_images/212f085c8c393b12d03b3c0f552930f9e6d589adc4688548117fc1d994e95f30.png" src="../_images/212f085c8c393b12d03b3c0f552930f9e6d589adc4688548117fc1d994e95f30.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/utils/wrapper.py:48,</span> in <span class="ni">Wrapper.__getattr__</span><span class="nt">(self, attr)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">48</span>     <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span> <span class="k">except</span> <span class="ne">AttributeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="ne">AttributeError</span>: &#39;RandomForestRegressor&#39; object has no attribute &#39;line_color&#39;
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">YellowbrickAttributeError</span><span class="g g-Whitespace">                 </span>Traceback (most recent call last)
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/IPython/core/formatters.py:974,</span> in <span class="ni">MimeBundleFormatter.__call__</span><span class="nt">(self, obj, include, exclude)</span>
+<span class="g g-Whitespace">    </span><span class="mi">971</span>     <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">973</span>     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">974</span>         <span class="k">return</span> <span class="n">method</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">975</span>     <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">976</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:669,</span> in <span class="ni">BaseEstimator._repr_mimebundle_</span><span class="nt">(self, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">667</span> <span class="k">def</span> <span class="nf">_repr_mimebundle_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">668</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Mime bundle used by jupyter kernels to display estimator&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">669</span>     <span class="n">output</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;text/plain&quot;</span><span class="p">:</span> <span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)}</span>
+<span class="g g-Whitespace">    </span><span class="mi">670</span>     <span class="k">if</span> <span class="n">get_config</span><span class="p">()[</span><span class="s2">&quot;display&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;diagram&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">671</span>         <span class="n">output</span><span class="p">[</span><span class="s2">&quot;text/html&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator_html_repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:287,</span> in <span class="ni">BaseEstimator.__repr__</span><span class="nt">(self, N_CHAR_MAX)</span>
+<span class="g g-Whitespace">    </span><span class="mi">279</span> <span class="c1"># use ellipsis for sequences with a lot of elements</span>
+<span class="g g-Whitespace">    </span><span class="mi">280</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">_EstimatorPrettyPrinter</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">281</span>     <span class="n">compact</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">282</span>     <span class="n">indent</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">283</span>     <span class="n">indent_at_name</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">284</span>     <span class="n">n_max_elements_to_show</span><span class="o">=</span><span class="n">N_MAX_ELEMENTS_TO_SHOW</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">285</span> <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">287</span> <span class="n">repr_</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">289</span> <span class="c1"># Use bruteforce ellipsis when there are a lot of non-blank characters</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span> <span class="n">n_nonblank</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repr_</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:153,</span> in <span class="ni">PrettyPrinter.pformat</span><span class="nt">(self, object)</span>
+<span class="g g-Whitespace">    </span><span class="mi">151</span> <span class="k">def</span> <span class="nf">pformat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">152</span>     <span class="n">sio</span> <span class="o">=</span> <span class="n">_StringIO</span><span class="p">()</span>
+<span class="ne">--&gt; </span><span class="mi">153</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_format</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">sio</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{},</span> <span class="mi">0</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">154</span>     <span class="k">return</span> <span class="n">sio</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:170,</span> in <span class="ni">PrettyPrinter._format</span><span class="nt">(self, object, stream, indent, allowance, context, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_readable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="k">return</span>
+<span class="ne">--&gt; </span><span class="mi">170</span> <span class="n">rep</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">171</span> <span class="n">max_width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_width</span> <span class="o">-</span> <span class="n">indent</span> <span class="o">-</span> <span class="n">allowance</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">rep</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max_width</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:404,</span> in <span class="ni">PrettyPrinter._repr</span><span class="nt">(self, object, context, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">403</span> <span class="k">def</span> <span class="nf">_repr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">404</span>     <span class="nb">repr</span><span class="p">,</span> <span class="n">readable</span><span class="p">,</span> <span class="n">recursive</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">405</span>                                             <span class="bp">self</span><span class="o">.</span><span class="n">_depth</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">406</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">readable</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">407</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_readable</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:189,</span> in <span class="ni">_EstimatorPrettyPrinter.format</span><span class="nt">(self, object, context, maxlevels, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">188</span> <span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">maxlevels</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">189</span>     <span class="k">return</span> <span class="n">_safe_repr</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">190</span>         <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">maxlevels</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">changed_only</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_changed_only</span>
+<span class="g g-Whitespace">    </span><span class="mi">191</span>     <span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:440,</span> in <span class="ni">_safe_repr</span><span class="nt">(object, context, maxlevels, level, changed_only)</span>
+<span class="g g-Whitespace">    </span><span class="mi">438</span> <span class="n">recursive</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">439</span> <span class="k">if</span> <span class="n">changed_only</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">440</span>     <span class="n">params</span> <span class="o">=</span> <span class="n">_changed_params</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">441</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">442</span>     <span class="n">params</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:93,</span> in <span class="ni">_changed_params</span><span class="nt">(estimator)</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span> <span class="k">def</span> <span class="nf">_changed_params</span><span class="p">(</span><span class="n">estimator</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Return dict (param_name: value) of parameters that were given to</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span><span class="sd">     estimator with non-default values.&quot;&quot;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">93</span>     <span class="n">params</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">init_func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">estimator</span><span class="o">.</span><span class="fm">__init__</span><span class="p">,</span> <span class="s2">&quot;deprecated_original&quot;</span><span class="p">,</span> <span class="n">estimator</span><span class="o">.</span><span class="fm">__init__</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">init_params</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="n">init_func</span><span class="p">)</span><span class="o">.</span><span class="n">parameters</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/base.py:342,</span> in <span class="ni">ModelVisualizer.get_params</span><span class="nt">(self, deep)</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span> <span class="k">def</span> <span class="nf">get_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">335</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">336</span><span class="sd">     After v0.24 - scikit-learn is able to determine that ``self.estimator`` is</span>
+<span class="g g-Whitespace">    </span><span class="mi">337</span><span class="sd">     nested and fetches its params using ``estimator__param``. This functionality is</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">340</span><span class="sd">     the estimator params.</span>
+<span class="g g-Whitespace">    </span><span class="mi">341</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">342</span>     <span class="n">params</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">ModelVisualizer</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="n">deep</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>         <span class="k">if</span> <span class="n">param</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;estimator__&quot;</span><span class="p">):</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:195,</span> in <span class="ni">BaseEstimator.get_params</span><span class="nt">(self, deep)</span>
+<span class="g g-Whitespace">    </span><span class="mi">193</span> <span class="n">out</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">194</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_param_names</span><span class="p">():</span>
+<span class="ne">--&gt; </span><span class="mi">195</span>     <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">196</span>     <span class="k">if</span> <span class="n">deep</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;get_params&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span>         <span class="n">deep_items</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/utils/wrapper.py:50,</span> in <span class="ni">Wrapper.__getattr__</span><span class="nt">(self, attr)</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>     <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span> <span class="k">except</span> <span class="ne">AttributeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">50</span>     <span class="k">raise</span> <span class="n">YellowbrickAttributeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;neither visualizer &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39; nor wrapped estimator &#39;</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39; have attribute &#39;</span><span class="si">{</span><span class="n">attr</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+
+<span class="ne">YellowbrickAttributeError</span>: neither visualizer &#39;ResidualsPlot&#39; nor wrapped estimator &#39;RandomForestRegressor&#39; have attribute &#39;line_color&#39;
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/utils/wrapper.py:48,</span> in <span class="ni">Wrapper.__getattr__</span><span class="nt">(self, attr)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">48</span>     <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span> <span class="k">except</span> <span class="ne">AttributeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="ne">AttributeError</span>: &#39;RandomForestRegressor&#39; object has no attribute &#39;line_color&#39;
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">YellowbrickAttributeError</span><span class="g g-Whitespace">                 </span>Traceback (most recent call last)
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/IPython/core/formatters.py:708,</span> in <span class="ni">PlainTextFormatter.__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">701</span> <span class="n">stream</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">702</span> <span class="n">printer</span> <span class="o">=</span> <span class="n">pretty</span><span class="o">.</span><span class="n">RepresentationPrinter</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">703</span>     <span class="bp">self</span><span class="o">.</span><span class="n">max_width</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">newline</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">704</span>     <span class="n">max_seq_length</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_seq_length</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span>     <span class="n">singleton_pprinters</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">singleton_printers</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">706</span>     <span class="n">type_pprinters</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">type_printers</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">707</span>     <span class="n">deferred_pprinters</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">deferred_printers</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">708</span> <span class="n">printer</span><span class="o">.</span><span class="n">pretty</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">709</span> <span class="n">printer</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">710</span> <span class="k">return</span> <span class="n">stream</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/IPython/lib/pretty.py:410,</span> in <span class="ni">RepresentationPrinter.pretty</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">407</span>                         <span class="k">return</span> <span class="n">meth</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">408</span>                 <span class="k">if</span> <span class="bp">cls</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">object</span> \
+<span class="g g-Whitespace">    </span><span class="mi">409</span>                         <span class="ow">and</span> <span class="nb">callable</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;__repr__&#39;</span><span class="p">)):</span>
+<span class="ne">--&gt; </span><span class="mi">410</span>                     <span class="k">return</span> <span class="n">_repr_pprint</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">412</span>     <span class="k">return</span> <span class="n">_default_pprint</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">413</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/IPython/lib/pretty.py:778,</span> in <span class="ni">_repr_pprint</span><span class="nt">(obj, p, cycle)</span>
+<span class="g g-Whitespace">    </span><span class="mi">776</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;A pprint that just redirects to the normal repr function.&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">777</span> <span class="c1"># Find newlines and replace them with p.break_()</span>
+<span class="ne">--&gt; </span><span class="mi">778</span> <span class="n">output</span> <span class="o">=</span> <span class="nb">repr</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">779</span> <span class="n">lines</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">780</span> <span class="k">with</span> <span class="n">p</span><span class="o">.</span><span class="n">group</span><span class="p">():</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:287,</span> in <span class="ni">BaseEstimator.__repr__</span><span class="nt">(self, N_CHAR_MAX)</span>
+<span class="g g-Whitespace">    </span><span class="mi">279</span> <span class="c1"># use ellipsis for sequences with a lot of elements</span>
+<span class="g g-Whitespace">    </span><span class="mi">280</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">_EstimatorPrettyPrinter</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">281</span>     <span class="n">compact</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">282</span>     <span class="n">indent</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">283</span>     <span class="n">indent_at_name</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">284</span>     <span class="n">n_max_elements_to_show</span><span class="o">=</span><span class="n">N_MAX_ELEMENTS_TO_SHOW</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">285</span> <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">287</span> <span class="n">repr_</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">289</span> <span class="c1"># Use bruteforce ellipsis when there are a lot of non-blank characters</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span> <span class="n">n_nonblank</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repr_</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:153,</span> in <span class="ni">PrettyPrinter.pformat</span><span class="nt">(self, object)</span>
+<span class="g g-Whitespace">    </span><span class="mi">151</span> <span class="k">def</span> <span class="nf">pformat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">152</span>     <span class="n">sio</span> <span class="o">=</span> <span class="n">_StringIO</span><span class="p">()</span>
+<span class="ne">--&gt; </span><span class="mi">153</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_format</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">sio</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{},</span> <span class="mi">0</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">154</span>     <span class="k">return</span> <span class="n">sio</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:170,</span> in <span class="ni">PrettyPrinter._format</span><span class="nt">(self, object, stream, indent, allowance, context, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_readable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="k">return</span>
+<span class="ne">--&gt; </span><span class="mi">170</span> <span class="n">rep</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">171</span> <span class="n">max_width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_width</span> <span class="o">-</span> <span class="n">indent</span> <span class="o">-</span> <span class="n">allowance</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">rep</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max_width</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:404,</span> in <span class="ni">PrettyPrinter._repr</span><span class="nt">(self, object, context, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">403</span> <span class="k">def</span> <span class="nf">_repr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">404</span>     <span class="nb">repr</span><span class="p">,</span> <span class="n">readable</span><span class="p">,</span> <span class="n">recursive</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">405</span>                                             <span class="bp">self</span><span class="o">.</span><span class="n">_depth</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">406</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">readable</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">407</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_readable</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:189,</span> in <span class="ni">_EstimatorPrettyPrinter.format</span><span class="nt">(self, object, context, maxlevels, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">188</span> <span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">maxlevels</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">189</span>     <span class="k">return</span> <span class="n">_safe_repr</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">190</span>         <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">maxlevels</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">changed_only</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_changed_only</span>
+<span class="g g-Whitespace">    </span><span class="mi">191</span>     <span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:440,</span> in <span class="ni">_safe_repr</span><span class="nt">(object, context, maxlevels, level, changed_only)</span>
+<span class="g g-Whitespace">    </span><span class="mi">438</span> <span class="n">recursive</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">439</span> <span class="k">if</span> <span class="n">changed_only</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">440</span>     <span class="n">params</span> <span class="o">=</span> <span class="n">_changed_params</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">441</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">442</span>     <span class="n">params</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:93,</span> in <span class="ni">_changed_params</span><span class="nt">(estimator)</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span> <span class="k">def</span> <span class="nf">_changed_params</span><span class="p">(</span><span class="n">estimator</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Return dict (param_name: value) of parameters that were given to</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span><span class="sd">     estimator with non-default values.&quot;&quot;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">93</span>     <span class="n">params</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">init_func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">estimator</span><span class="o">.</span><span class="fm">__init__</span><span class="p">,</span> <span class="s2">&quot;deprecated_original&quot;</span><span class="p">,</span> <span class="n">estimator</span><span class="o">.</span><span class="fm">__init__</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">init_params</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="n">init_func</span><span class="p">)</span><span class="o">.</span><span class="n">parameters</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/base.py:342,</span> in <span class="ni">ModelVisualizer.get_params</span><span class="nt">(self, deep)</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span> <span class="k">def</span> <span class="nf">get_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">335</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">336</span><span class="sd">     After v0.24 - scikit-learn is able to determine that ``self.estimator`` is</span>
+<span class="g g-Whitespace">    </span><span class="mi">337</span><span class="sd">     nested and fetches its params using ``estimator__param``. This functionality is</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">340</span><span class="sd">     the estimator params.</span>
+<span class="g g-Whitespace">    </span><span class="mi">341</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">342</span>     <span class="n">params</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">ModelVisualizer</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="n">deep</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>         <span class="k">if</span> <span class="n">param</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;estimator__&quot;</span><span class="p">):</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:195,</span> in <span class="ni">BaseEstimator.get_params</span><span class="nt">(self, deep)</span>
+<span class="g g-Whitespace">    </span><span class="mi">193</span> <span class="n">out</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">194</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_param_names</span><span class="p">():</span>
+<span class="ne">--&gt; </span><span class="mi">195</span>     <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">196</span>     <span class="k">if</span> <span class="n">deep</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;get_params&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span>         <span class="n">deep_items</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/utils/wrapper.py:50,</span> in <span class="ni">Wrapper.__getattr__</span><span class="nt">(self, attr)</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>     <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span> <span class="k">except</span> <span class="ne">AttributeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">50</span>     <span class="k">raise</span> <span class="n">YellowbrickAttributeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;neither visualizer &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39; nor wrapped estimator &#39;</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39; have attribute &#39;</span><span class="si">{</span><span class="n">attr</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+
+<span class="ne">YellowbrickAttributeError</span>: neither visualizer &#39;ResidualsPlot&#39; nor wrapped estimator &#39;RandomForestRegressor&#39; have attribute &#39;line_color&#39;
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/utils/wrapper.py:48,</span> in <span class="ni">Wrapper.__getattr__</span><span class="nt">(self, attr)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">48</span>     <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span> <span class="k">except</span> <span class="ne">AttributeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="ne">AttributeError</span>: &#39;RandomForestRegressor&#39; object has no attribute &#39;line_color&#39;
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">YellowbrickAttributeError</span><span class="g g-Whitespace">                 </span>Traceback (most recent call last)
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/IPython/core/formatters.py:344,</span> in <span class="ni">BaseFormatter.__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">342</span>     <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">344</span>         <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">345</span>     <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:665,</span> in <span class="ni">BaseEstimator._repr_html_inner</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">660</span> <span class="k">def</span> <span class="nf">_repr_html_inner</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">661</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;This function is returned by the @property `_repr_html_` to make</span>
+<span class="g g-Whitespace">    </span><span class="mi">662</span><span class="sd">     `hasattr(estimator, &quot;_repr_html_&quot;) return `True` or `False` depending</span>
+<span class="g g-Whitespace">    </span><span class="mi">663</span><span class="sd">     on `get_config()[&quot;display&quot;]`.</span>
+<span class="g g-Whitespace">    </span><span class="mi">664</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">665</span>     <span class="k">return</span> <span class="n">estimator_html_repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_estimator_html_repr.py:388,</span> in <span class="ni">estimator_html_repr</span><span class="nt">(estimator)</span>
+<span class="g g-Whitespace">    </span><span class="mi">386</span> <span class="n">style_template</span> <span class="o">=</span> <span class="n">Template</span><span class="p">(</span><span class="n">_STYLE</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">387</span> <span class="n">style_with_id</span> <span class="o">=</span> <span class="n">style_template</span><span class="o">.</span><span class="n">substitute</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">container_id</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">388</span> <span class="n">estimator_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">estimator</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">390</span> <span class="c1"># The fallback message is shown by default and loading the CSS sets</span>
+<span class="g g-Whitespace">    </span><span class="mi">391</span> <span class="c1"># div.sk-text-repr-fallback to display: none to hide the fallback message.</span>
+<span class="g g-Whitespace">    </span><span class="mi">392</span> <span class="c1">#</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">397</span> <span class="c1"># The reverse logic applies to HTML repr div.sk-container.</span>
+<span class="g g-Whitespace">    </span><span class="mi">398</span> <span class="c1"># div.sk-container is hidden by default and the loading the CSS displays it.</span>
+<span class="g g-Whitespace">    </span><span class="mi">399</span> <span class="n">fallback_msg</span> <span class="o">=</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">400</span>     <span class="s2">&quot;In a Jupyter environment, please rerun this cell to show the HTML&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">401</span>     <span class="s2">&quot; representation or trust the notebook. &lt;br /&gt;On GitHub, the&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">402</span>     <span class="s2">&quot; HTML representation is unable to render, please try loading this page&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">403</span>     <span class="s2">&quot; with nbviewer.org.&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">404</span> <span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:287,</span> in <span class="ni">BaseEstimator.__repr__</span><span class="nt">(self, N_CHAR_MAX)</span>
+<span class="g g-Whitespace">    </span><span class="mi">279</span> <span class="c1"># use ellipsis for sequences with a lot of elements</span>
+<span class="g g-Whitespace">    </span><span class="mi">280</span> <span class="n">pp</span> <span class="o">=</span> <span class="n">_EstimatorPrettyPrinter</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">281</span>     <span class="n">compact</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">282</span>     <span class="n">indent</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">283</span>     <span class="n">indent_at_name</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">284</span>     <span class="n">n_max_elements_to_show</span><span class="o">=</span><span class="n">N_MAX_ELEMENTS_TO_SHOW</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">285</span> <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">287</span> <span class="n">repr_</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">289</span> <span class="c1"># Use bruteforce ellipsis when there are a lot of non-blank characters</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span> <span class="n">n_nonblank</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repr_</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:153,</span> in <span class="ni">PrettyPrinter.pformat</span><span class="nt">(self, object)</span>
+<span class="g g-Whitespace">    </span><span class="mi">151</span> <span class="k">def</span> <span class="nf">pformat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">152</span>     <span class="n">sio</span> <span class="o">=</span> <span class="n">_StringIO</span><span class="p">()</span>
+<span class="ne">--&gt; </span><span class="mi">153</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_format</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">sio</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{},</span> <span class="mi">0</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">154</span>     <span class="k">return</span> <span class="n">sio</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:170,</span> in <span class="ni">PrettyPrinter._format</span><span class="nt">(self, object, stream, indent, allowance, context, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_readable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="k">return</span>
+<span class="ne">--&gt; </span><span class="mi">170</span> <span class="n">rep</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">171</span> <span class="n">max_width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_width</span> <span class="o">-</span> <span class="n">indent</span> <span class="o">-</span> <span class="n">allowance</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">rep</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max_width</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/pprint.py:404,</span> in <span class="ni">PrettyPrinter._repr</span><span class="nt">(self, object, context, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">403</span> <span class="k">def</span> <span class="nf">_repr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">404</span>     <span class="nb">repr</span><span class="p">,</span> <span class="n">readable</span><span class="p">,</span> <span class="n">recursive</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">405</span>                                             <span class="bp">self</span><span class="o">.</span><span class="n">_depth</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">406</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">readable</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">407</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_readable</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:189,</span> in <span class="ni">_EstimatorPrettyPrinter.format</span><span class="nt">(self, object, context, maxlevels, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">188</span> <span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">maxlevels</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">189</span>     <span class="k">return</span> <span class="n">_safe_repr</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">190</span>         <span class="nb">object</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">maxlevels</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">changed_only</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_changed_only</span>
+<span class="g g-Whitespace">    </span><span class="mi">191</span>     <span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:440,</span> in <span class="ni">_safe_repr</span><span class="nt">(object, context, maxlevels, level, changed_only)</span>
+<span class="g g-Whitespace">    </span><span class="mi">438</span> <span class="n">recursive</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">439</span> <span class="k">if</span> <span class="n">changed_only</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">440</span>     <span class="n">params</span> <span class="o">=</span> <span class="n">_changed_params</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">441</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">442</span>     <span class="n">params</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/utils/_pprint.py:93,</span> in <span class="ni">_changed_params</span><span class="nt">(estimator)</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span> <span class="k">def</span> <span class="nf">_changed_params</span><span class="p">(</span><span class="n">estimator</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Return dict (param_name: value) of parameters that were given to</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span><span class="sd">     estimator with non-default values.&quot;&quot;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">93</span>     <span class="n">params</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">init_func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">estimator</span><span class="o">.</span><span class="fm">__init__</span><span class="p">,</span> <span class="s2">&quot;deprecated_original&quot;</span><span class="p">,</span> <span class="n">estimator</span><span class="o">.</span><span class="fm">__init__</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">init_params</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="n">init_func</span><span class="p">)</span><span class="o">.</span><span class="n">parameters</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/base.py:342,</span> in <span class="ni">ModelVisualizer.get_params</span><span class="nt">(self, deep)</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span> <span class="k">def</span> <span class="nf">get_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">335</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">336</span><span class="sd">     After v0.24 - scikit-learn is able to determine that ``self.estimator`` is</span>
+<span class="g g-Whitespace">    </span><span class="mi">337</span><span class="sd">     nested and fetches its params using ``estimator__param``. This functionality is</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">340</span><span class="sd">     the estimator params.</span>
+<span class="g g-Whitespace">    </span><span class="mi">341</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">342</span>     <span class="n">params</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">ModelVisualizer</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">get_params</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="n">deep</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>         <span class="k">if</span> <span class="n">param</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;estimator__&quot;</span><span class="p">):</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/base.py:195,</span> in <span class="ni">BaseEstimator.get_params</span><span class="nt">(self, deep)</span>
+<span class="g g-Whitespace">    </span><span class="mi">193</span> <span class="n">out</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">194</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_param_names</span><span class="p">():</span>
+<span class="ne">--&gt; </span><span class="mi">195</span>     <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">196</span>     <span class="k">if</span> <span class="n">deep</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;get_params&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span>         <span class="n">deep_items</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/yellowbrick/utils/wrapper.py:50,</span> in <span class="ni">Wrapper.__getattr__</span><span class="nt">(self, attr)</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>     <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span> <span class="k">except</span> <span class="ne">AttributeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">50</span>     <span class="k">raise</span> <span class="n">YellowbrickAttributeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;neither visualizer &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39; nor wrapped estimator &#39;</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wrapped</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39; have attribute &#39;</span><span class="si">{</span><span class="n">attr</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+
+<span class="ne">YellowbrickAttributeError</span>: neither visualizer &#39;ResidualsPlot&#39; nor wrapped estimator &#39;RandomForestRegressor&#39; have attribute &#39;line_color&#39;
 </pre></div>
 </div>
 </div>
@@ -737,12 +1087,10 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2cc4336075a59a284df7a62b131e62c9a06d7313f81eb89bee69a86f8e6cffdd.png" src="../_images/2cc4336075a59a284df7a62b131e62c9a06d7313f81eb89bee69a86f8e6cffdd.png" />
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PredictionError(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;Prediction Error for RandomForestRegressor&#39;}, xlabel=&#39;$y$&#39;, ylabel=&#39;$\\hat{y}$&#39;&gt;,
-                model=None)
-</pre></div>
-</div>
-</div>
+<img alt="../_images/9d0c818067b5fb8ff28387bfbb1ef2f330190ace5b860a099d0b913e835945bc.png" src="../_images/9d0c818067b5fb8ff28387bfbb1ef2f330190ace5b860a099d0b913e835945bc.png" />
+<div class="output text_html"><style>#sk-container-id-2 {color: black;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>PredictionError(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;Prediction Error for RandomForestRegressor&#x27;}, xlabel=&#x27;$y$&#x27;, ylabel=&#x27;$\\hat{y}$&#x27;&gt;,
+                estimator=RandomForestRegressor())</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" ><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">PredictionError</label><div class="sk-toggleable__content"><pre>PredictionError(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;Prediction Error for RandomForestRegressor&#x27;}, xlabel=&#x27;$y$&#x27;, ylabel=&#x27;$\\hat{y}$&#x27;&gt;,
+                estimator=RandomForestRegressor())</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: RandomForestRegressor</label><div class="sk-toggleable__content"><pre>RandomForestRegressor()</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestRegressor</label><div class="sk-toggleable__content"><pre>RandomForestRegressor()</pre></div></div></div></div></div></div></div></div></div></div></div></div>
 </div>
 </section>
 <section id="confusion-matrix-for-classifiers">
@@ -750,6 +1098,16 @@ Error in Test
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">plot_confusion_matrix</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">plot_confusion_matrix</span>
+
+<span class="ne">ImportError</span>: cannot import name &#39;plot_confusion_matrix&#39; from &#39;sklearn.metrics&#39; (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sklearn/metrics/__init__.py)
 </pre></div>
 </div>
 </div>
@@ -775,10 +1133,14 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay at 0x7f8384acfb80&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plot_confusion_matrix</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plot_confusion_matrix&#39; is not defined
 </pre></div>
 </div>
-<img alt="../_images/cf633e3a9d54db3013b8d41cd36dbc04ee2bace7e36b0cf002f2f18d36a3d4d1.png" src="../_images/cf633e3a9d54db3013b8d41cd36dbc04ee2bace7e36b0cf002f2f18d36a3d4d1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -788,10 +1150,14 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay at 0x7f835438e130&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plot_confusion_matrix</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plot_confusion_matrix&#39; is not defined
 </pre></div>
 </div>
-<img alt="../_images/281bb26e131c414484502a158527953daeffc68d07650c6f8d5f6395737a2c3f.png" src="../_images/281bb26e131c414484502a158527953daeffc68d07650c6f8d5f6395737a2c3f.png" />
 </div>
 </div>
 </section>
@@ -811,13 +1177,12 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4155b97857ad7ca2383c401972256ba59588cbb8fced3feb9a64706d9c80a5ee.png" src="../_images/4155b97857ad7ca2383c401972256ba59588cbb8fced3feb9a64706d9c80a5ee.png" />
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ConfusionMatrix(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;RandomForestClassifier Confusion Matrix&#39;}, xlabel=&#39;Predicted Class&#39;, ylabel=&#39;True Class&#39;&gt;,
-                cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f83538e1c40&gt;,
-                model=None)
-</pre></div>
-</div>
-</div>
+<img alt="../_images/9577dd6bd406d8b1fc89c2d1165122fad77d2797dce0282d939d0e5261877f46.png" src="../_images/9577dd6bd406d8b1fc89c2d1165122fad77d2797dce0282d939d0e5261877f46.png" />
+<div class="output text_html"><style>#sk-container-id-3 {color: black;}#sk-container-id-3 pre{padding: 0;}#sk-container-id-3 div.sk-toggleable {background-color: white;}#sk-container-id-3 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-3 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-3 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-3 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-3 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-3 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-3 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-3 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-3 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-3 div.sk-item {position: relative;z-index: 1;}#sk-container-id-3 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-3 div.sk-item::before, #sk-container-id-3 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-3 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-3 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-3 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-3 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-3 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-3 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-3 div.sk-label-container {text-align: center;}#sk-container-id-3 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-3 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>ConfusionMatrix(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;RandomForestClassifier Confusion Matrix&#x27;}, xlabel=&#x27;Predicted Class&#x27;, ylabel=&#x27;True Class&#x27;&gt;,
+                cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f76c0a6c760&gt;,
+                estimator=RandomForestClassifier())</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">ConfusionMatrix</label><div class="sk-toggleable__content"><pre>ConfusionMatrix(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;RandomForestClassifier Confusion Matrix&#x27;}, xlabel=&#x27;Predicted Class&#x27;, ylabel=&#x27;True Class&#x27;&gt;,
+                cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f76c0a6c760&gt;,
+                estimator=RandomForestClassifier())</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div></div></div></div></div></div></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -826,13 +1191,12 @@ Error in Test
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a39a5128f80a4f23e365ad595696413319ffae24effe642a630fe2323b139ceb.png" src="../_images/a39a5128f80a4f23e365ad595696413319ffae24effe642a630fe2323b139ceb.png" />
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ClassificationReport(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;RandomForestClassifier Classification Report&#39;}&gt;,
-                     cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f83538efd90&gt;,
-                     model=None)
-</pre></div>
-</div>
-</div>
+<img alt="../_images/9b392096573d69316e1adbd72e7bd0400d22a78e8d864e6840d4fa944383b85f.png" src="../_images/9b392096573d69316e1adbd72e7bd0400d22a78e8d864e6840d4fa944383b85f.png" />
+<div class="output text_html"><style>#sk-container-id-4 {color: black;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>ClassificationReport(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;RandomForestClassifier Classification Report&#x27;}&gt;,
+                     cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f76c093f370&gt;,
+                     estimator=RandomForestClassifier())</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label sk-toggleable__label-arrow">ClassificationReport</label><div class="sk-toggleable__content"><pre>ClassificationReport(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;RandomForestClassifier Classification Report&#x27;}&gt;,
+                     cmap=&lt;matplotlib.colors.ListedColormap object at 0x7f76c093f370&gt;,
+                     estimator=RandomForestClassifier())</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div></div></div></div></div></div></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -850,15 +1214,15 @@ Error in Test
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-   &lt;1H OCEAN       0.65      0.87      0.74      2259
-      INLAND       0.77      0.82      0.79      1632
-      ISLAND       0.00      0.00      0.00         1
-    NEAR BAY       0.53      0.23      0.32       556
-  NEAR OCEAN       0.39      0.07      0.12       661
+   &lt;1H OCEAN       0.65      0.85      0.74      2271
+      INLAND       0.77      0.83      0.80      1625
+      ISLAND       0.00      0.00      0.00         2
+    NEAR BAY       0.56      0.25      0.34       552
+  NEAR OCEAN       0.36      0.08      0.13       659
 
     accuracy                           0.68      5109
-   macro avg       0.47      0.40      0.39      5109
-weighted avg       0.64      0.68      0.63      5109
+   macro avg       0.47      0.40      0.40      5109
+weighted avg       0.64      0.68      0.64      5109
 </pre></div>
 </div>
 </div>
@@ -870,12 +1234,12 @@ weighted avg       0.64      0.68      0.63      5109
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/7a6b8302fb948a63b3b5b22389f3d5b3865de25785827b9785766d36b403712b.png" src="../_images/7a6b8302fb948a63b3b5b22389f3d5b3865de25785827b9785766d36b403712b.png" />
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PrecisionRecallCurve(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;Precision-Recall Curve for RandomForestClassifier&#39;}, xlabel=&#39;Recall&#39;, ylabel=&#39;Precision&#39;&gt;,
-                     iso_f1_values={0.2, 0.4, 0.6, 0.8}, model=None)
-</pre></div>
-</div>
-</div>
+<img alt="../_images/60de7158371e18a715ef6613fab8bf3a7b4e59718b0ac7c69f97258c7540577c.png" src="../_images/60de7158371e18a715ef6613fab8bf3a7b4e59718b0ac7c69f97258c7540577c.png" />
+<div class="output text_html"><style>#sk-container-id-5 {color: black;}#sk-container-id-5 pre{padding: 0;}#sk-container-id-5 div.sk-toggleable {background-color: white;}#sk-container-id-5 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-5 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-5 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-5 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-5 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-5 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-5 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-5 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-5 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-5 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-5 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-5 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-5 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-5 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-5 div.sk-item {position: relative;z-index: 1;}#sk-container-id-5 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-5 div.sk-item::before, #sk-container-id-5 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-5 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-5 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-5 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-5 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-5 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-5 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-5 div.sk-label-container {text-align: center;}#sk-container-id-5 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-5 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>PrecisionRecallCurve(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;Precision-Recall Curve for RandomForestClassifier&#x27;}, xlabel=&#x27;Recall&#x27;, ylabel=&#x27;Precision&#x27;&gt;,
+                     estimator=OneVsRestClassifier(estimator=RandomForestClassifier()),
+                     iso_f1_values={0.2, 0.4, 0.6, 0.8})</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label sk-toggleable__label-arrow">PrecisionRecallCurve</label><div class="sk-toggleable__content"><pre>PrecisionRecallCurve(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;Precision-Recall Curve for RandomForestClassifier&#x27;}, xlabel=&#x27;Recall&#x27;, ylabel=&#x27;Precision&#x27;&gt;,
+                     estimator=OneVsRestClassifier(estimator=RandomForestClassifier()),
+                     iso_f1_values={0.2, 0.4, 0.6, 0.8})</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: OneVsRestClassifier</label><div class="sk-toggleable__content"><pre>OneVsRestClassifier(estimator=RandomForestClassifier())</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -884,12 +1248,10 @@ weighted avg       0.64      0.68      0.63      5109
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/bc23646fcf4910c065706c0d8d871c99cd99161163c954fae7cfa658b5cb9286.png" src="../_images/bc23646fcf4910c065706c0d8d871c99cd99161163c954fae7cfa658b5cb9286.png" />
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ROCAUC(ax=&lt;AxesSubplot:title={&#39;center&#39;:&#39;ROC Curves for RandomForestClassifier&#39;}, xlabel=&#39;False Positive Rate&#39;, ylabel=&#39;True Postive Rate&#39;&gt;,
-       model=None)
-</pre></div>
-</div>
-</div>
+<img alt="../_images/30f279921217f09befa57032088e71df9c3e2df6da8b6d7fb504f9e3a45ca2df.png" src="../_images/30f279921217f09befa57032088e71df9c3e2df6da8b6d7fb504f9e3a45ca2df.png" />
+<div class="output text_html"><style>#sk-container-id-6 {color: black;}#sk-container-id-6 pre{padding: 0;}#sk-container-id-6 div.sk-toggleable {background-color: white;}#sk-container-id-6 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-6 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-6 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-6 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-6 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-6 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-6 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-6 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-6 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-6 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-6 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-6 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-6 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-6 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-6 div.sk-item {position: relative;z-index: 1;}#sk-container-id-6 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-6 div.sk-item::before, #sk-container-id-6 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-6 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-6 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-6 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-6 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-6 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-6 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-6 div.sk-label-container {text-align: center;}#sk-container-id-6 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-6 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-6" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>ROCAUC(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;ROC Curves for RandomForestClassifier&#x27;}, xlabel=&#x27;False Positive Rate&#x27;, ylabel=&#x27;True Positive Rate&#x27;&gt;,
+       estimator=RandomForestClassifier())</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label sk-toggleable__label-arrow">ROCAUC</label><div class="sk-toggleable__content"><pre>ROCAUC(ax=&lt;Axes: title={&#x27;center&#x27;: &#x27;ROC Curves for RandomForestClassifier&#x27;}, xlabel=&#x27;False Positive Rate&#x27;, ylabel=&#x27;True Positive Rate&#x27;&gt;,
+       estimator=RandomForestClassifier())</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier()</pre></div></div></div></div></div></div></div></div></div></div></div></div>
 </div>
 </section>
 <section id="exercise">
@@ -931,11 +1293,10 @@ weighted avg       0.64      0.68      0.63      5109
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="42%20-%20Machine%20learning%20interpretability.html"
@@ -955,10 +1316,7 @@ weighted avg       0.64      0.68      0.63      5109
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1029,8 +1387,8 @@ By Jesper Dramsch
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

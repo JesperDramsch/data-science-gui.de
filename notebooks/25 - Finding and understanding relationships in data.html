@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -54,7 +55,6 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script data-domain="data-science-gui.de" defer="defer" src="https://plausible.io/js/script.js"></script>
-    <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2158291969836277"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -79,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -140,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../welcome.html">
+<a class="navbar-brand logo" href="../index.html">
   
   
   
@@ -154,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../welcome.html">
+                <a class="reference internal" href="../index.html">
                     Data Science and Machine Learning in Python
                 </a>
             </li>
@@ -401,10 +410,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -412,7 +421,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -577,147 +586,44 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py:10054,</span> in <span class="ni">DataFrame.corr</span><span class="nt">(self, method, min_periods, numeric_only)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10052</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+<span class="g g-Whitespace">  </span><span class="mi">10053</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">cols</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="ne">&gt; </span><span class="mi">10054</span> <span class="n">mat</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10056</span> <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;pearson&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">  </span><span class="mi">10057</span>     <span class="n">correl</span> <span class="o">=</span> <span class="n">libalgos</span><span class="o">.</span><span class="n">nancorr</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">minp</span><span class="o">=</span><span class="n">min_periods</span><span class="p">)</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>housing_median_age</th>
-      <th>total_rooms</th>
-      <th>total_bedrooms</th>
-      <th>population</th>
-      <th>households</th>
-      <th>median_income</th>
-      <th>median_house_value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>longitude</th>
-      <td>1.000000</td>
-      <td>-0.924664</td>
-      <td>-0.108197</td>
-      <td>0.044568</td>
-      <td>0.069608</td>
-      <td>0.099773</td>
-      <td>0.055310</td>
-      <td>-0.015176</td>
-      <td>-0.045967</td>
-    </tr>
-    <tr>
-      <th>latitude</th>
-      <td>-0.924664</td>
-      <td>1.000000</td>
-      <td>0.011173</td>
-      <td>-0.036100</td>
-      <td>-0.066983</td>
-      <td>-0.108785</td>
-      <td>-0.071035</td>
-      <td>-0.079809</td>
-      <td>-0.144160</td>
-    </tr>
-    <tr>
-      <th>housing_median_age</th>
-      <td>-0.108197</td>
-      <td>0.011173</td>
-      <td>1.000000</td>
-      <td>-0.361262</td>
-      <td>-0.320451</td>
-      <td>-0.296244</td>
-      <td>-0.302916</td>
-      <td>-0.119034</td>
-      <td>0.105623</td>
-    </tr>
-    <tr>
-      <th>total_rooms</th>
-      <td>0.044568</td>
-      <td>-0.036100</td>
-      <td>-0.361262</td>
-      <td>1.000000</td>
-      <td>0.930380</td>
-      <td>0.857126</td>
-      <td>0.918484</td>
-      <td>0.198050</td>
-      <td>0.134153</td>
-    </tr>
-    <tr>
-      <th>total_bedrooms</th>
-      <td>0.069608</td>
-      <td>-0.066983</td>
-      <td>-0.320451</td>
-      <td>0.930380</td>
-      <td>1.000000</td>
-      <td>0.877747</td>
-      <td>0.979728</td>
-      <td>-0.007723</td>
-      <td>0.049686</td>
-    </tr>
-    <tr>
-      <th>population</th>
-      <td>0.099773</td>
-      <td>-0.108785</td>
-      <td>-0.296244</td>
-      <td>0.857126</td>
-      <td>0.877747</td>
-      <td>1.000000</td>
-      <td>0.907222</td>
-      <td>0.004834</td>
-      <td>-0.024650</td>
-    </tr>
-    <tr>
-      <th>households</th>
-      <td>0.055310</td>
-      <td>-0.071035</td>
-      <td>-0.302916</td>
-      <td>0.918484</td>
-      <td>0.979728</td>
-      <td>0.907222</td>
-      <td>1.000000</td>
-      <td>0.013033</td>
-      <td>0.065843</td>
-    </tr>
-    <tr>
-      <th>median_income</th>
-      <td>-0.015176</td>
-      <td>-0.079809</td>
-      <td>-0.119034</td>
-      <td>0.198050</td>
-      <td>-0.007723</td>
-      <td>0.004834</td>
-      <td>0.013033</td>
-      <td>1.000000</td>
-      <td>0.688075</td>
-    </tr>
-    <tr>
-      <th>median_house_value</th>
-      <td>-0.045967</td>
-      <td>-0.144160</td>
-      <td>0.105623</td>
-      <td>0.134153</td>
-      <td>0.049686</td>
-      <td>-0.024650</td>
-      <td>0.065843</td>
-      <td>0.688075</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py:1838,</span> in <span class="ni">DataFrame.to_numpy</span><span class="nt">(self, dtype, copy, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1836</span> <span class="k">if</span> <span class="n">dtype</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1837</span>     <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1838</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mgr</span><span class="o">.</span><span class="n">as_array</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">na_value</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1839</span> <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">dtype</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">dtype</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1840</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/managers.py:1732,</span> in <span class="ni">BlockManager.as_array</span><span class="nt">(self, dtype, copy, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1730</span>         <span class="n">arr</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">writeable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">   </span><span class="mi">1731</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1732</span>     <span class="n">arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interleave</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">na_value</span><span class="o">=</span><span class="n">na_value</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1733</span>     <span class="c1"># The underlying data was copied within _interleave, so no need</span>
+<span class="g g-Whitespace">   </span><span class="mi">1734</span>     <span class="c1"># to further copy if copy=True or setting na_value</span>
+<span class="g g-Whitespace">   </span><span class="mi">1736</span> <span class="k">if</span> <span class="n">na_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">lib</span><span class="o">.</span><span class="n">no_default</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/managers.py:1794,</span> in <span class="ni">BlockManager._interleave</span><span class="nt">(self, dtype, na_value)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1792</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1793</span>         <span class="n">arr</span> <span class="o">=</span> <span class="n">blk</span><span class="o">.</span><span class="n">get_values</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1794</span>     <span class="n">result</span><span class="p">[</span><span class="n">rl</span><span class="o">.</span><span class="n">indexer</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="g g-Whitespace">   </span><span class="mi">1795</span>     <span class="n">itemmask</span><span class="p">[</span><span class="n">rl</span><span class="o">.</span><span class="n">indexer</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="g g-Whitespace">   </span><span class="mi">1797</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">itemmask</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+
+<span class="ne">ValueError</span>: could not convert string to float: &#39;NEAR BAY&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -803,131 +709,131 @@ document.write(`
     <tr>
       <th>households</th>
       <td>1.000000</td>
-      <td>-0.144570</td>
-      <td>-0.447142</td>
-      <td>-0.533597</td>
-      <td>-0.415423</td>
-      <td>-0.563332</td>
-      <td>-0.003463</td>
-      <td>0.690820</td>
-      <td>0.913025</td>
-      <td>0.774491</td>
+      <td>-0.130367</td>
+      <td>-0.349911</td>
+      <td>-0.749939</td>
+      <td>-0.350976</td>
+      <td>-0.431868</td>
+      <td>-0.042860</td>
+      <td>0.637276</td>
+      <td>0.901754</td>
+      <td>0.683374</td>
     </tr>
     <tr>
       <th>housing_median_age</th>
-      <td>-0.390813</td>
+      <td>-0.394507</td>
       <td>1.000000</td>
-      <td>-0.132480</td>
-      <td>-0.165241</td>
-      <td>-0.559866</td>
-      <td>-0.440203</td>
-      <td>0.026190</td>
-      <td>-0.193436</td>
-      <td>-0.214817</td>
-      <td>-0.202610</td>
+      <td>-0.112865</td>
+      <td>-0.057193</td>
+      <td>-0.569852</td>
+      <td>-0.515014</td>
+      <td>0.069116</td>
+      <td>-0.204597</td>
+      <td>-0.214778</td>
+      <td>-0.244898</td>
     </tr>
     <tr>
       <th>latitude</th>
-      <td>-0.410987</td>
-      <td>-0.233321</td>
+      <td>-0.458297</td>
+      <td>-0.118385</td>
       <td>1.000000</td>
-      <td>0.857985</td>
-      <td>-0.211149</td>
-      <td>-0.332732</td>
-      <td>0.304855</td>
-      <td>-0.454057</td>
-      <td>-0.497355</td>
-      <td>-0.520949</td>
+      <td>0.909812</td>
+      <td>-0.368369</td>
+      <td>-0.473968</td>
+      <td>0.294671</td>
+      <td>-0.534992</td>
+      <td>-0.508280</td>
+      <td>-0.415565</td>
     </tr>
     <tr>
       <th>longitude</th>
-      <td>-0.441152</td>
-      <td>-0.174760</td>
-      <td>0.848897</td>
+      <td>-0.526366</td>
+      <td>-0.072625</td>
+      <td>0.920855</td>
       <td>1.000000</td>
-      <td>-0.294143</td>
-      <td>-0.384623</td>
-      <td>0.240098</td>
-      <td>-0.469780</td>
-      <td>-0.568217</td>
-      <td>-0.549190</td>
+      <td>-0.338847</td>
+      <td>-0.432598</td>
+      <td>0.285287</td>
+      <td>-0.590422</td>
+      <td>-0.560803</td>
+      <td>-0.413894</td>
     </tr>
     <tr>
       <th>median_house_value</th>
-      <td>-0.414650</td>
-      <td>-0.069849</td>
-      <td>-0.013003</td>
-      <td>0.024442</td>
+      <td>-0.447504</td>
+      <td>-0.189322</td>
+      <td>-0.204971</td>
+      <td>-0.031409</td>
       <td>1.000000</td>
-      <td>0.211195</td>
-      <td>0.195402</td>
-      <td>-0.364254</td>
-      <td>-0.449542</td>
-      <td>-0.511915</td>
+      <td>0.307552</td>
+      <td>0.172538</td>
+      <td>-0.500464</td>
+      <td>-0.362921</td>
+      <td>-0.482102</td>
     </tr>
     <tr>
       <th>median_income</th>
-      <td>-0.460916</td>
-      <td>-0.136534</td>
-      <td>-0.072966</td>
-      <td>-0.075537</td>
-      <td>0.225065</td>
+      <td>-0.509722</td>
+      <td>-0.177947</td>
+      <td>-0.324338</td>
+      <td>-0.181009</td>
+      <td>0.367095</td>
       <td>1.000000</td>
-      <td>0.035218</td>
-      <td>-0.460280</td>
-      <td>-0.506068</td>
-      <td>-0.312035</td>
+      <td>0.032975</td>
+      <td>-0.397577</td>
+      <td>-0.282942</td>
+      <td>-0.483328</td>
     </tr>
     <tr>
       <th>ocean_proximity</th>
-      <td>-0.431085</td>
-      <td>-0.198852</td>
-      <td>0.233178</td>
-      <td>0.261712</td>
-      <td>-0.339951</td>
-      <td>-0.622042</td>
+      <td>-0.470124</td>
+      <td>-0.138525</td>
+      <td>0.320915</td>
+      <td>0.311382</td>
+      <td>-0.397754</td>
+      <td>-0.537347</td>
       <td>1.000000</td>
-      <td>-0.444207</td>
-      <td>-0.518805</td>
-      <td>-0.535767</td>
+      <td>-0.449099</td>
+      <td>-0.533171</td>
+      <td>-0.354148</td>
     </tr>
     <tr>
       <th>population</th>
-      <td>0.634771</td>
-      <td>-0.685453</td>
-      <td>-0.410946</td>
-      <td>-0.601808</td>
-      <td>-1.057938</td>
-      <td>-1.734453</td>
-      <td>0.000805</td>
+      <td>0.755102</td>
+      <td>-0.125627</td>
+      <td>-0.519572</td>
+      <td>-0.685505</td>
+      <td>-0.310102</td>
+      <td>-0.591641</td>
+      <td>-0.043246</td>
       <td>1.000000</td>
-      <td>0.606695</td>
-      <td>0.545163</td>
+      <td>0.714869</td>
+      <td>0.676502</td>
     </tr>
     <tr>
       <th>total_bedrooms</th>
-      <td>0.922312</td>
-      <td>-0.158556</td>
-      <td>-0.427050</td>
-      <td>-0.505466</td>
-      <td>-0.336863</td>
-      <td>-0.630859</td>
-      <td>-0.002282</td>
-      <td>0.663148</td>
+      <td>0.901204</td>
+      <td>-0.098848</td>
+      <td>-0.301775</td>
+      <td>-0.775331</td>
+      <td>-0.289392</td>
+      <td>-0.390394</td>
+      <td>-0.047900</td>
+      <td>0.615327</td>
       <td>1.000000</td>
-      <td>0.769918</td>
+      <td>0.702853</td>
     </tr>
     <tr>
       <th>total_rooms</th>
-      <td>0.785244</td>
-      <td>-0.145565</td>
-      <td>-0.438153</td>
-      <td>-0.633370</td>
-      <td>-0.433045</td>
-      <td>-0.593382</td>
-      <td>-0.005794</td>
-      <td>0.586880</td>
-      <td>0.750808</td>
+      <td>0.761382</td>
+      <td>-0.080561</td>
+      <td>-0.389772</td>
+      <td>-0.418922</td>
+      <td>-0.350492</td>
+      <td>-0.522022</td>
+      <td>-0.026118</td>
+      <td>0.628142</td>
+      <td>0.796526</td>
       <td>1.000000</td>
     </tr>
   </tbody>
@@ -942,10 +848,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;feature&#39;, ylabel=&#39;target&#39;&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;feature&#39;, ylabel=&#39;target&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/4591295892922f6c9635a8ed50c9a37cdb18c63a977c61927337c34d8de8ee3a.png" src="../_images/4591295892922f6c9635a8ed50c9a37cdb18c63a977c61927337c34d8de8ee3a.png" />
+<img alt="../_images/525b11df50791f4945b3e9f9f7b0773e3076427e9487dbee71089e5404f22232.png" src="../_images/525b11df50791f4945b3e9f9f7b0773e3076427e9487dbee71089e5404f22232.png" />
 </div>
 </div>
 </section>
@@ -986,11 +892,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="24%20-%20Selecting%20subsets.html"
@@ -1010,10 +915,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1082,8 +984,8 @@ By Jesper Dramsch
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
