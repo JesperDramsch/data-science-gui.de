@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: welcome
+root: index
 parts:
 - caption: Before we begin
   chapters:
@@ -24,8 +24,8 @@ parts:
   - file: notebooks/11 - Dealing with missing values
   - file: notebooks/12 - Formatting and deduping data
   - file: notebooks/14 - Scaling and binning data
-  - file: text/advanced-strategies 
-    sections: 
+  - file: text/advanced-strategies
+    sections:
     - file: notebooks/15 - Advanced Strategies (Schemas)
     - file: notebooks/16 - Advanced Strategies (Encoding)
 - caption: Exploratory Data Analysis
@@ -38,14 +38,14 @@ parts:
   - file: notebooks/25 - Finding and understanding relationships in data
 - caption: Machine Learning
   chapters:
-  - file: text/machine-learning-modelling 
+  - file: text/machine-learning-modelling
     sections:
     - file: notebooks/31 - Linear regression
     - file: notebooks/32 - Decision trees and random forests
     - file: notebooks/33 - Machine learning classification
     - file: notebooks/34 - Clustering for deeper data insights
-  - file: text/machine-learning-evaluation 
-    sections: 
+  - file: text/machine-learning-evaluation
+    sections:
     - file: notebooks/41 - Validating machine learning models
       title: Validating machine learning models
     - file: notebooks/42 - Machine learning interpretability
