@@ -104,6 +104,6 @@ sphinx:
     sitemap_url_scheme      : "{link}"
     bibtex_reference_style  : author_year
     bibtex_bibfiles         : ["references.bib"]
-    html_js_files           : [ ['https://plausible.io/js/script.js', {'defer': 'defer', 'data-domain': 'data-science-gui.de'}]]
+    html_js_files           : [ ['https://info.data-science-gui.de/js/script.js', {'defer': 'defer', 'data-domain': 'data-science-gui.de'}]]
   extra_extensions:
     - sphinx_sitemap
