@@ -9,7 +9,7 @@
 title                       : Data Science and Machine Learning in Python  # The title of the book. Will be placed in the left navbar.
 author                      : Jesper Dramsch  # The author of the book
 copyright                   : "2020 - 2023"  # Copyright year to be placed in the footer
-logo                        : ""  # A path to the book logo
+logo                        : "img/logo.png"  # A path to the book logo
 
 
 #######################################################################################
@@ -48,7 +48,7 @@ parse:
 #######################################################################################
 # HTML-specific settings
 html:
-  favicon                   : ""  # A path to a favicon image
+  favicon                   : "img/favicon.ico"  # A path to a favicon image
   use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button     : true  # Whether to add a link to your repository button
   use_issues_button         : false  # Whether to add an "open an issue" button
