@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -65,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/31 - Linear regression';</script>
     <link rel="canonical" href="https://data-science-gui.de/notebooks/31 - Linear regression.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Decision trees and random forests" href="32%20-%20Decision%20trees%20and%20random%20forests.html" />
@@ -147,6 +148,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
@@ -155,7 +157,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    <p class="title logo__title">Data Science and Machine Learning in Python</p>
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Data Science and Machine Learning in Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Data Science and Machine Learning in Python - Home"/>`);</script>
+  
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -408,6 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -417,6 +427,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -666,7 +677,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5195491189925558
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5192705387501353
 </pre></div>
 </div>
 </div>
@@ -725,13 +736,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[-0.99666275,  0.21093119, -0.16798737],
-       [ 1.2951286 ,  0.28661355, -0.1137037 ],
-       [-1.62888105,  0.0488819 ,  2.47060756],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 1.05844784, -0.2893407 , -0.32742401],
+       [ 0.89924795, -0.79685735, -1.5506161 ],
+       [-0.1355513 , -0.22735053, -1.26992938],
        ...,
-       [-1.07569004,  0.09696246, -0.47437344],
-       [ 0.34680114,  0.40859571, -0.86796935],
-       [-1.47082647, -0.19953432,  0.35527166]])
+       [-0.21515124, -0.41465896, -0.61159622],
+       [ 1.85444726, -0.31163933, -0.14126772],
+       [-1.48875031,  0.29622113,  1.23898219]])
 </pre></div>
 </div>
 </div>
@@ -752,7 +763,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5170663956311317
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.510323175583234
 </pre></div>
 </div>
 </div>
@@ -766,7 +777,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5170663956311317
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.510323175583234
 </pre></div>
 </div>
 </div>
@@ -781,8 +792,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([171984.45301474, 171933.57803098,  96446.4670074 , ...,
-       286231.32755177, 197005.07253292, 288465.68314793])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([179989.85570011, 123844.6395936 , 182500.46847846, ...,
+       302572.99963468, 225442.25982538, 182811.5948043 ])
 </pre></div>
 </div>
 </div>
@@ -794,17 +805,17 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>14218    150400.0
-12010    198800.0
-1786      88000.0
-4226     254200.0
-19923     89200.0
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6004     124000.0
+13891     81000.0
+7712     285500.0
+7215     143800.0
+19935     74400.0
            ...   
-7976     161400.0
-20263    224500.0
-15627    500001.0
-17585    213900.0
-13231    286300.0
+7213     140600.0
+11458    273600.0
+17904    271200.0
+16108    297800.0
+4409     155500.0
 Name: median_house_value, Length: 2580, dtype: float64
 </pre></div>
 </div>
@@ -820,7 +831,7 @@ Name: median_house_value, Length: 2580, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 95694.58417541, 135887.59606832, 611579.56231545])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([102288.26788411, 138181.20173406, 616603.27088744])
 </pre></div>
 </div>
 </div>
@@ -832,7 +843,7 @@ Name: median_house_value, Length: 2580, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3803.021708533779
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1060.646762925724
 </pre></div>
 </div>
 </div>
@@ -880,7 +891,7 @@ Name: median_house_value, Length: 2580, dtype: float64
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../text/machine-learning-modelling.html"
@@ -944,6 +955,7 @@ By Jesper Dramsch
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2020 - 2023.
@@ -973,8 +985,8 @@ By Jesper Dramsch
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

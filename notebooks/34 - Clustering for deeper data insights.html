@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -65,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/34 - Clustering for deeper data insights';</script>
     <link rel="canonical" href="https://data-science-gui.de/notebooks/34 - Clustering for deeper data insights.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Machine Learning Evaluation" href="../text/machine-learning-evaluation.html" />
@@ -147,6 +148,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
@@ -155,7 +157,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    <p class="title logo__title">Data Science and Machine Learning in Python</p>
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Data Science and Machine Learning in Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Data Science and Machine Learning in Python - Home"/>`);</script>
+  
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -408,6 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -417,6 +427,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -612,10 +623,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fe5212e4970&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fed080d5bb0&gt;
 </pre></div>
 </div>
-<img alt="../_images/a1e14d01ae576ceeb4a5068c96081aafc1d5b7a31cf0921b3a7fff094885d53f.png" src="../_images/a1e14d01ae576ceeb4a5068c96081aafc1d5b7a31cf0921b3a7fff094885d53f.png" />
+<img alt="../_images/ab6bf31965dac761b5c556403c2a75ac961ddfd3d19c8c68c164812df21a43dd.png" src="../_images/ab6bf31965dac761b5c556403c2a75ac961ddfd3d19c8c68c164812df21a43dd.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -626,10 +637,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fe51df47bb0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fecfdfd81f0&gt;
 </pre></div>
 </div>
-<img alt="../_images/31de20b8d964c3386e46ca98918d7278e14a1995a147a9f1b1be36a557fe6d11.png" src="../_images/31de20b8d964c3386e46ca98918d7278e14a1995a147a9f1b1be36a557fe6d11.png" />
+<img alt="../_images/f6a3b0876c95d9d14ed4234980b0c5ab37992e6e946d46617dcdb84e7fa529f4.png" src="../_images/f6a3b0876c95d9d14ed4234980b0c5ab37992e6e946d46617dcdb84e7fa529f4.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -641,10 +652,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fe51decb550&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fecfdf44cd0&gt;
 </pre></div>
 </div>
-<img alt="../_images/80ccaf546933f3f26a2ef78526266c684cdb2ceb743213bb832762cadbb4aacf.png" src="../_images/80ccaf546933f3f26a2ef78526266c684cdb2ceb743213bb832762cadbb4aacf.png" />
+<img alt="../_images/7e75ebae073d58f8a345023863de024c55cb202579b5f8278559f8ba4d69dea8.png" src="../_images/7e75ebae073d58f8a345023863de024c55cb202579b5f8278559f8ba4d69dea8.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -669,10 +680,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fe51de93fa0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fecfdec2af0&gt;
 </pre></div>
 </div>
-<img alt="../_images/cfbaea8b26af51883c14504666917d5ee35596fc420cfb638fc20c7f0e92e213.png" src="../_images/cfbaea8b26af51883c14504666917d5ee35596fc420cfb638fc20c7f0e92e213.png" />
+<img alt="../_images/9d2ba60c801f2d0a71de06f11266b42ade67f3500bc706e3672bcd7c5a34f83f.png" src="../_images/9d2ba60c801f2d0a71de06f11266b42ade67f3500bc706e3672bcd7c5a34f83f.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -704,10 +715,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fe51ddeef40&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fecfcbfc580&gt;
 </pre></div>
 </div>
-<img alt="../_images/1b4bb1152051e49f68595c9b54f6a4c6cfb51b4e4082772d8f32e3221b7548d2.png" src="../_images/1b4bb1152051e49f68595c9b54f6a4c6cfb51b4e4082772d8f32e3221b7548d2.png" />
+<img alt="../_images/88965c21afe0197a0067c8db5628b405a3e9572a5a4937120364275312d0e4e9.png" src="../_images/88965c21afe0197a0067c8db5628b405a3e9572a5a4937120364275312d0e4e9.png" />
 </div>
 </div>
 </section>
@@ -752,7 +763,7 @@ document.write(`
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="33%20-%20Machine%20learning%20classification.html"
@@ -811,6 +822,7 @@ By Jesper Dramsch
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2020 - 2023.
@@ -840,8 +852,8 @@ By Jesper Dramsch
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
